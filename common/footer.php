@@ -101,6 +101,8 @@
             jQuery('#item-images').find('video').parent('div.item-file').addClass('gvsu_media');
             jQuery('#item-images').find('audio').parent('div.item-file').addClass('gvsu_media');
             jQuery('#item-images').find('.image-jpeg:first').css('clear','left');
+            var imagePosition = (jQuery('.image-jpeg').index()) +1;
+            jQuery('.item-file:nth-child(' + imagePosition + ')').before('<div class="cms-clear" style="width: 100%;"><h3>Supplementary Images</h3></div>');
         } else {
             jQuery('#item-images').find('div.item-file').addClass('gvsu_only_file');
         }

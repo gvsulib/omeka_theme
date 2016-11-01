@@ -1,6 +1,8 @@
 # GVSU Omeka Theme
 
-An Omeka theme for GVSU University Libraries, based on the GVSU CMS4 Template
+An Omeka theme for GVSU University Libraries, based on the GVSU CMS4 Template.
+
+![GVSU Omeka Thumbnail](theme.jpg)
 
 ## Installation
 
