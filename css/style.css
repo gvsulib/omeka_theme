@@ -1,0 +1,436 @@
+#gvsu-cf_header-search {
+    float: right;
+    width: 45%;
+    position: relative;
+    font-size: 1.16667em;
+    line-height: 1.28571em;
+}
+#search-form input[type="text"] {
+    padding: 3px;
+    width: 100%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+#search-form input[type="text"], 
+#search-form button {
+    border: 1px solid #ccc;
+    background: #fafafa;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    border-radius: 0;
+    height: 30px;
+}
+.show-advanced.button {
+    border-left: 1px solid #005177;
+    text-decoration: none;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+#search-form input[type="text"], 
+#search-form button {
+    border: 1px solid #ccc;
+    background: #fafafa;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    border-radius: 0;
+    height: 30px;
+}
+#advanced-form {
+    display: none;
+    background-color: #fff;
+    overflow: auto;
+    z-index: 1001;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    border: 1px solid #e7e7e7;
+    width: 100%;
+    padding: 1.5em 1em;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+#advanced-form.open {
+    display: block;
+}
+#advanced-form.closed {
+    display: none;
+}
+#gvsu-cf_header-search button {
+    background: #fafafa;
+    color: white;
+    position: absolute;
+    border: 0;
+    border-left: 1px solid #ddd;
+    right: 0;
+    top: 0;
+    width: 30px;
+    text-indent: -9999px;
+}
+#gvsu-cf_header-search button::after {
+    font-family: "FontAwesome";
+    content: "\f002";
+    text-indent: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    width: 30px;
+    color: #069;
+}
+#gvsu-cf_header-search legend {
+  font-weight: bold;
+}
+fieldset {
+    min-height: 20px;
+    padding: none;
+    margin-bottom: 20px;
+    background-color: #fafafa;
+    border: 1px solid #border-style: dot-dash;;
+    border-radius: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+#advanced-form input[type="radio"] {
+    margin-right: 5px;
+}
+#gvsu-cf_header-search {
+  text-align: left;
+}
+#cms-body h1, 
+#cms-body h2, 
+#cms-body h3, 
+#cms-body h4, 
+#cms-body h5, 
+#cms-body h6 {
+  margin-top: .8em;
+  margin-bottom: .3em;
+}
+.item-pagination {
+    clear: both;
+    overflow: hidden;
+    border-top: 1px solid #eee;
+    padding-top: 18px;
+}
+.navigation {
+    list-style: none;
+    padding-left: 0;
+}
+.navigation a {
+  text-decoration: none;
+}
+#next-item {
+    float: right;
+}
+#previous-item {
+  float: left;
+}
+#primary-nav {
+    clear: both;
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+    width: 960px;
+    z-index: 50;
+    font-size: .9em;
+    margin-bottom: 1.5em;
+}
+#primary-nav .navigation {
+    position: relative;
+    z-index: 100;
+    overflow: visible;
+}
+#primary-nav .nav-menu {
+    display: block;
+    position: relative;
+    list-style: none;
+    margin: 0 0 0 -1px;
+    padding: 0 0 0 1px;
+    z-index: 15;
+}
+#primary-nav .nav-item {
+    list-style: none;
+    display: block;
+    padding: 0;
+    margin: 0;
+    float: left;
+    position: relative;
+    overflow: visible;
+}
+
+#primary-nav .nav-item > a {
+    position: relative;
+    display: inline-block;
+    margin: 0 .75em;
+}
+#mobile-nav {
+    display: none;
+  }
+
+.collection.record img,
+.item.record img {
+    width: 100%;
+}
+
+.item.record h2 a,
+.collection.record h2 a,
+.exhibit h2 a {
+    color: #333;
+    text-decoration: none;
+}
+
+#primary-nav ul li {
+    float: left;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: .65em .85em;
+    font-size: 1.25em;
+    font-weight: 100;
+    font-family: AlternateGothicFSNo3,Arial,sans-serif;
+    color: #4E4E4E;
+}
+
+#sort-links {
+    float: right;
+    list-style-type: none;
+    padding: 0;
+    display: block;
+    font-size: .9em;
+}
+
+.sort-label {
+    display: inline-block;
+}
+
+#sort-links ul {
+    padding-left: 0;
+}
+
+#sort-links-list {
+    display: inline-block;
+    margin: .75em 0 .75em 10px;
+}
+
+#sort-links ul li {
+    padding-left: 10px;
+    display: inline-block;
+}
+
+.desc a::after, .asc a::after {
+    font-family: "FontAwesome";
+    display: inline-block;
+    height: 0;
+    width: 0;
+    margin-right: 16px;
+}
+
+.desc a::after {
+    content: "\00a0\f0d8";
+}
+
+.asc a::after {
+    content: "\00a0\f0d7";
+}
+
+#secondary-nav, .secondary-nav {
+    margin-bottom: 1.5em;
+    overflow: auto;
+    border-bottom: 1px solid #ccc;
+    clear: both;
+}
+
+#secondary-nav li, .secondary-nav li {
+    padding: 1.5em 0;
+    margin-right: 20px;
+}
+
+.navigation li {
+    float: left;
+}
+
+#secondary-nav a, .secondary-nav a {
+    color: #666;
+}
+
+.pagination {
+    float: left;
+    padding-left: 0;
+    margin: 0 0 1.5em 0;
+}
+.pagination li {
+    height: 3em;
+    border: solid #e7e7e7;
+    border-width: 1px 0 1px 1px;
+    float: left;
+    list-style-type: none;
+}
+.pagination a, .pagination form {
+    text-decoration: none;
+    padding: 0 10px;
+    line-height: 36px;
+    display: inline-block;
+}
+.page-input input[type="text"] {
+    border: 1px solid #ccc;
+    text-align: right;
+    width: 50px;
+    margin-right: 5px;
+    display: inline-block;
+}
+.pagination li:last-of-type {
+    border-right: 1px solid #e7e7e7;
+}
+
+#outputs {
+        font-size: .9em;
+        clear: left;
+        margin-top: 1em;
+        padding-top: 1em;
+        border-top: 1px solid #bbb;
+    }
+
+#cms-content-footer .cms-report-problem {
+    color: #0000ee;
+}
+
+#collection-items h2 {
+    border-bottom: 1px solid #ddd;
+}
+#collection-items h2 a {
+    color: #333;
+    text-decoration: none;
+}
+#item-filters {
+    clear: both;
+}
+#item-filters ul, 
+#search-filters ul {
+    padding-left: 0;
+    list-style-type: none;
+    border-bottom: 1px solid #eee;
+    margin: -.75em 0 0;
+}
+#item-filters ul > li, 
+#search-filters ul > li
+{
+    display: inline-block;
+    background-color: #eee;
+    padding: .375em .75em;
+    margin: 0 .75em .75em 0;
+}
+#item-filters ul > li:last-child::after, 
+#search-filters ul > li:last-child::after {
+    content: "\00A0";
+}
+#item-filters ul, #search-filters ul {
+    list-style-type: none;
+}
+#secondary-nav .active a, 
+.secondary-nav .active a {
+    background: #fff;
+    color: #333;
+    font-weight: bold;
+}
+
+.featured, #featured-exhibit {
+    overflow: hidden;
+    background: #eee;
+    padding: 0 3.5% 1em;
+    margin-bottom: 1.5em;
+}
+
+@media screen and (max-width: 800px) {
+  #mobile-nav {
+    display: block;
+  }
+  #primary-nav {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 600px) {
+
+
+    /* Set the default column size to be 25% */
+    #item-images .item-file,
+    .collection.record,
+    .item.record,
+    .item.hentry,
+    .exhibits .exhibit {
+        width: 24%;
+        float:left;
+        margin: 1em 1% 2em 0;
+    }
+
+    #home .item.record,
+    #featured-collection .collection.record {
+        width: auto;
+        float: none;
+    }
+
+    #home .col-2 {
+        float:left;
+        margin: 1em 1% 2em 0;
+        width: 49%;
+    }
+    
+    /* If div has video or audio, make it bigger */
+    #item-images .gvsu_media
+     {
+        width: 49%;
+        background-color: #000;
+    }
+
+    #item-images video,
+    #item-images audio {
+        width: 100%;
+    }
+
+    .gvsu_only_file {
+        width: auto !important
+    }
+
+    /* Navigation */
+    #cms-body .cms-navigation > ul > li {
+        width: auto;
+    }
+
+    /* Make collections and item browsing better */
+    .item.record {
+        height: 28em;
+        position: relative;
+    }
+
+    .item.record .item-description{
+        max-height: 4.5em;
+        overflow: hidden;
+    }
+   
+}
+
+.featured img, 
+#featured-exhibit img,
+#featured-collection img {
+    float: left;
+    height: 10.5em;
+    width: auto;
+    background-color: #fff;
+    margin-right: .5em;
+}
+
+#recent-items .item.record {
+    height: auto;
+    clear: both;
+    padding-bottom: 1em;
+}
+
+#recent-items .item img {
+    height: 6em;
+    width: auto;
+    float: left;
+    margin-right: .4em;
+}
