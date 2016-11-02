@@ -366,7 +366,9 @@ fieldset {
         margin: 1em 1% 2em 0;
     }
 
-   
+   .collection.record {
+    height: 32em;
+   }
 
     #home .col-2 {
         float:left;
