@@ -366,11 +366,7 @@ fieldset {
         margin: 1em 1% 2em 0;
     }
 
-    #home .item.record,
-    #featured-collection .collection.record {
-        width: auto;
-        float: none;
-    }
+   
 
     #home .col-2 {
         float:left;
@@ -409,6 +405,23 @@ fieldset {
         max-height: 4.5em;
         overflow: hidden;
     }
+
+    .item.record .item-description{
+        max-height: 4.5em;
+        overflow: hidden;
+    }
+
+    #home .item.record,
+    #featured-collection .collection.record {
+        width: auto !important;
+        float: none !important;
+        height: auto !important;
+    }
+
+    #home .item.record .item-description{
+        max-height: auto;
+        overflow: auto;
+    }
    
 }
 
@@ -416,8 +429,8 @@ fieldset {
 #featured-exhibit img,
 #featured-collection img {
     float: left;
-    height: 10.5em;
-    width: auto;
+    height: 10.5em !important;
+    width: auto !important;
     background-color: #fff;
     margin-right: .5em;
 }
