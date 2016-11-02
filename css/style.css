@@ -343,6 +343,10 @@ fieldset {
     margin-bottom: 1.5em;
 }
 
+.item-file {
+    border: 1px solid #bbb;
+}
+
 @media screen and (max-width: 800px) {
   #mobile-nav {
     display: block;
@@ -380,12 +384,7 @@ fieldset {
     #item-images .gvsu_media
      {
         width: 49%;
-        background-color: #000;
-    }
-
-    #item-images video,
-    #item-images audio {
-        width: 100%;
+        background-color: #575757;
     }
 
     .gvsu_only_file {

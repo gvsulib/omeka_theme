@@ -98,8 +98,8 @@
 
         if(jQuery('#item-images').find('div.item-file').length > 1) {
             // Add special meia class to make video and audio larger
-            jQuery('#item-images').find('video').parent('div.item-file').addClass('gvsu_media');
-            jQuery('#item-images').find('audio').parent('div.item-file').addClass('gvsu_media');
+            jQuery('#item-images').find('video').closest('div.item-file').addClass('gvsu_media');
+            jQuery('#item-images').find('audio').closest('div.item-file').addClass('gvsu_media');
             jQuery('#item-images').find('.image-jpeg:first').css('clear','left');
             var imagePosition = (jQuery('.image-jpeg').index()) +1;
             jQuery('.item-file:nth-child(' + imagePosition + ')').before('<div class="cms-clear" style="width: 100%;"><h3>Supplementary Images</h3></div>');
