@@ -99,7 +99,7 @@ fieldset {
     margin-right: 5px;
 }
 #gvsu-cf_header-search {
-  text-align: left;
+  text-align: left !important;
 }
 #cms-body h1, 
 #cms-body h2, 
@@ -315,17 +315,15 @@ fieldset {
     margin: -.75em 0 0;
 }
 #item-filters ul > li, 
-#search-filters ul > li
+#search-filters ul > li,
+#search-results span.item-type
 {
     display: inline-block;
-    background-color: #eee;
+    background-color: #ddd;
     padding: .375em .75em;
     margin: 0 .75em .75em 0;
 }
-#item-filters ul > li:last-child::after, 
-#search-filters ul > li:last-child::after {
-    content: "\00A0";
-}
+
 #item-filters ul, #search-filters ul {
     list-style-type: none;
 }
@@ -338,7 +336,7 @@ fieldset {
 
 .featured, #featured-exhibit {
     overflow: hidden;
-    background: #eee;
+    background: #ddd;
     padding: 0 3.5% 1em;
     margin-bottom: 1.5em;
 }
@@ -361,6 +359,54 @@ fieldset {
     overflow: hidden;
 }
 
+.lib-form input[type="text"],
+.lib-form select {
+  width: 96%;
+  padding: .25em 1%;
+  font-size: 1em;
+}
+
+#query-types br {
+    display: none;
+}
+
+#advanced-form {
+  border: 1px solid #bbb !important;
+}
+
+#advanced-form legend {
+  padding: .5em 0 .25em;
+}
+
+nav ul.navigation {
+  margin-left: 0 !important;
+}
+
+#more-toggle {
+  font-size: .75em;
+  margin: .75em 0;
+  color: #0000ee;
+  cursor: pointer;
+}
+
+#advanced-form.open {
+  padding: .5em;
+}
+
+#search-filters ul > li:last-child::after {
+    content: none;
+}
+
+#search-filters ul li ul {
+  display: inline-block;
+  border-bottom: none;
+}
+
+#search-filters ul li ul li {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
 @media screen and (max-width: 800px) {
   #mobile-nav {
     display: block;
@@ -378,7 +424,8 @@ fieldset {
     .collection.record,
     .item.record,
     .item.hentry,
-    .exhibits .exhibit {
+    .exhibits .exhibit,
+    .row .span4 {
         width: 24%;
         float:left;
         margin: 1em 1% 2em 0;
@@ -388,7 +435,8 @@ fieldset {
     height: 32em;
    }
 
-    #home .col-2 {
+    #home .col-2,
+    .row .span8 {
         float:left;
         margin: 1em 1% 2em 1%;
         width: 48%;
