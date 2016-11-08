@@ -347,6 +347,20 @@ fieldset {
     border: 1px solid #bbb;
 }
 
+.view-items-link {
+  margin-top: 1em;
+}
+
+.item-file.application-pdf::after {
+    content: "View PDF";
+    text-align: center;
+    display: block;
+    color: #fff;
+    background-color: rgba(0,0,0,.75);
+    padding: .25em 0;
+    overflow: hidden;
+}
+
 @media screen and (max-width: 800px) {
   #mobile-nav {
     display: block;
@@ -376,8 +390,8 @@ fieldset {
 
     #home .col-2 {
         float:left;
-        margin: 1em 1% 2em 0;
-        width: 49%;
+        margin: 1em 1% 2em 1%;
+        width: 48%;
     }
     
     /* If div has video or audio, make it bigger */
@@ -439,7 +453,7 @@ fieldset {
 #recent-items .item.record {
     height: auto;
     clear: both;
-    padding-bottom: 1em;
+    padding: .25em 0;
 }
 
 #recent-items .item img {
