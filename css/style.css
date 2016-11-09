@@ -5,6 +5,7 @@
     font-size: 1.16667em;
     line-height: 1.28571em;
 }
+
 #search-form input[type="text"] {
     padding: 3px;
     width: 100%;
@@ -176,6 +177,7 @@ fieldset {
     width: 100%;
 }
 
+
 .item.record h2 a,
 .collection.record h2 a,
 .exhibit h2 a {
@@ -236,6 +238,7 @@ fieldset {
     content: "\00a0\f0d7";
 }
 
+
 #secondary-nav, .secondary-nav {
     margin-bottom: 1.5em;
     overflow: auto;
@@ -284,6 +287,8 @@ fieldset {
 .pagination li:last-of-type {
     border-right: 1px solid #e7e7e7;
 }
+
+
 
 #outputs {
         font-size: .9em;
@@ -349,7 +354,7 @@ fieldset {
   margin-top: 1em;
 }
 
-.item-file.application-pdf::after {
+.item-file.application-pdf a.download-file::after { 
     content: "View PDF";
     text-align: center;
     display: block;
@@ -357,6 +362,10 @@ fieldset {
     background-color: rgba(0,0,0,.75);
     padding: .25em 0;
     overflow: hidden;
+    text-decoration: none;
+}
+a.download-file {
+    text-decoration:none;
 }
 
 .lib-form input[type="text"],
@@ -407,6 +416,14 @@ nav ul.navigation {
   padding-bottom: 0 !important;
 }
 
+.items #primary > a {
+    display: inline-block;
+    margin-top: 1.5em !important;
+    font-size: .8em !important;
+}
+
+
+
 @media screen and (max-width: 800px) {
   #mobile-nav {
     display: block;
@@ -434,6 +451,21 @@ nav ul.navigation {
    .collection.record {
     height: 32em;
    }
+
+   #search-results .file {
+    height: 18em;
+}
+
+#search-results .file > a:nth-child(2) {
+    height: 3em;
+    display: block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.collections .item.hentry {
+    height: 32em;
+}
 
     #home .col-2,
     .row .span8 {
