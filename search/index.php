@@ -4,7 +4,7 @@ echo head(array('title' => $pageTitle, 'bodyclass' => 'search'));
 $searchRecordTypes = get_search_record_types();
 ?>
 <h1><?php echo $pageTitle; ?></h1>
-<p>Testing</p>
+
 <?php echo search_filters(); ?>
 <?php if ($total_results): ?>
 <?php echo pagination_links(); ?>
@@ -31,4 +31,20 @@ $searchRecordTypes = get_search_record_types();
     <p><?php echo __('Your search returned no results.');?></p>
 </div>
 <?php endif; ?>
+<script>
+jQuery(document).ready(function() {
+
+jQuery('#search-results').find('div.file').each(function() {
+    var searchTitle = jQuery(this).find('a:nth-child(2)').text();
+    if(searchTitle.indexOf('http') >= 0) {
+        // Parse the URL
+        var linkParts = searchTitle.split('/');
+
+        // Replace the string
+        jQuery(this).find('a:nth-child(2)').text(linkParts[6].slice(9));
+    }
+});
+
+});
+</script>
 <?php echo foot(); ?>
