@@ -1,9 +1,13 @@
 #gvsu-cf_header-search {
-    float: right;
-    width: 45%;
     position: relative;
     font-size: 1.16667em;
     line-height: 1.28571em;
+    width: 100% !important;
+    margin-top: 1em;
+}
+
+#gvsu-cf_header-logo, #gvsu-cf_header-search {
+    display: block !important;
 }
 
 #search-form input[type="text"] {
@@ -28,6 +32,7 @@
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    font-size: .8em;
 }
 #search-form input[type="text"], 
 #search-form button {
@@ -43,7 +48,6 @@
     background-color: #fff;
     overflow: auto;
     z-index: 1001;
-    position: absolute;
     top: 30px;
     left: 0;
     border: 1px solid #e7e7e7;
@@ -55,9 +59,13 @@
 }
 #advanced-form.open {
     display: block;
+    font-size: .8em;
 }
 #advanced-form.closed {
     display: none;
+}
+#gvsu-cf_header-search label {
+    font-size: .8em;
 }
 #gvsu-cf_header-search button {
     background: #fafafa;
@@ -66,7 +74,7 @@
     border: 0;
     border-left: 1px solid #ddd;
     right: 0;
-    top: 0;
+    top: 1.7em;
     width: 30px;
     text-indent: -9999px;
 }
@@ -353,9 +361,14 @@ fieldset {
 .view-items-link {
   margin-top: 1em;
 }
+.item-file.application-pdf a.download-file,
+#item-images div[class*=" image-"] a.download-file {
+    /* Make Chrome happy */
+    display: block;
+}
 
-.item-file.application-pdf a.download-file::after { 
-    content: "View PDF";
+.item-file.application-pdf a.download-file::after,
+#item-images div[class*=" image-"] a.download-file::after { 
     text-align: center;
     display: block;
     color: #fff;
@@ -364,6 +377,15 @@ fieldset {
     overflow: hidden;
     text-decoration: none;
 }
+
+#item-images div[class*=" image-"] a.download-file::after {
+    content: "Click to Enlarge";
+}
+
+.item-file.application-pdf a.download-file::after { 
+    content: "View PDF";
+}
+
 a.download-file {
     text-decoration:none;
 }

@@ -49,15 +49,7 @@
            <a href="/"><img src="//www.gvsu.edu/includes/topbanner/3/gvsu_logo.png" alt="Grand Valley State University"></a>
 
        </div>
-       <div id="gvsu-cf_header-search">
-
-         <?php if (get_theme_option('use_advanced_search') === null || get_theme_option('use_advanced_search')): ?>
-         <?php echo search_form(array('show_advanced' => true)); ?>
-         <?php else: ?>
-         <?php echo search_form(); ?>
-         <?php endif; ?>
-
-       </div>
+       
      </div>
    </div>
 
@@ -86,6 +78,16 @@
                   echo public_nav_main();
              ?>
          </div>
+
+         <div id="gvsu-cf_header-search">
+          <label for="query">Search Digitial Collections</label>
+         <?php if (get_theme_option('use_advanced_search') === null || get_theme_option('use_advanced_search')): ?>
+         <?php echo search_form(array('show_advanced' => true)); ?>
+         <?php else: ?>
+         <?php echo search_form(); ?>
+         <?php endif; ?>
+
+       </div>
    			
    		</div>
    	</div>
