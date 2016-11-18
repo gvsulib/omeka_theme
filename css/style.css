@@ -26,8 +26,7 @@
     border-radius: 0;
     height: 30px;
 }
-.show-advanced.button {
-    border-left: 1px solid #005177;
+.advanced-button {
     text-decoration: none;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;

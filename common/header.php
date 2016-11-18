@@ -79,14 +79,15 @@
              ?>
          </div>
 
-         <div id="gvsu-cf_header-search">
-          <label for="query">Search Digitial Collections</label>
-         <?php if (get_theme_option('use_advanced_search') === null || get_theme_option('use_advanced_search')): ?>
-         <?php echo search_form(array('show_advanced' => true)); ?>
-         <?php else: ?>
-         <?php echo search_form(); ?>
-         <?php endif; ?>
-
+        <div id="gvsu-cf_header-search">
+          
+                  <form id="search-form" name="search-form" action="/omeka/search" method="get">
+                  <label for="query">Search Digitial Collections</label>  
+                  <input name="query" id="query" title="Search" type="text">
+                  <a class="advanced-button" href="/omeka/items/search">Advanced Search</a>
+                <button name="submit_search" id="submit_search" type="submit" value="Search">Search</button>
+        </form>
+         
        </div>
    			
    		</div>

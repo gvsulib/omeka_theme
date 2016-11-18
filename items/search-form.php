@@ -190,7 +190,10 @@ $formAttributes['method'] = 'GET';
 </div>
 
 <?php echo js_tag('items-search'); ?>
-<script type="text/javascript">
+<style>
+#gvsu-cf_header-search { display: none !important; }
+</style>
+<!--script type="text/javascript">
     jQuery(document).ready(function () {
         Omeka.Search.activateSearchButtons();
 
@@ -207,4 +210,4 @@ $formAttributes['method'] = 'GET';
         });
 
     });
-</script>
+</script-->
