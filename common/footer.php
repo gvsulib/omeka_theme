@@ -116,6 +116,23 @@
             });
 
         }
+
+        // Hide OCRed PDF text unless it is asked for
+        if(jQuery('#pdf-text-text').length > 0) {
+	
+			jQuery('#pdf-text-text').before('<span id="pdf-text-toggle" style="cursor:pointer;color:#0000ee;text-decoration:underline;display:block;margin:.75em 0;">Show Scanned Text</span>');
+			jQuery('#pdf-text-text').hide();
+
+			jQuery('#pdf-text-toggle').click(function() {
+				if(jQuery('#pdf-text-toggle').text() == 'Show Scanned Text') {
+					jQuery('#pdf-text-toggle').text('Hide Scanned Text');
+				} else {
+					jQuery('#pdf-text-toggle').text('Show Scanned Text');
+				}
+				jQuery('#pdf-text-text').slideToggle(800);
+			});
+
+		}
     });
 </script>
 
