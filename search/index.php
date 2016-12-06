@@ -41,7 +41,7 @@ jQuery('#search-results').find('div.file').each(function() {
         var linkParts = searchTitle.split('/');
 
         // Replace the string
-        jQuery(this).find('a:nth-child(2)').text(linkParts[6].slice(9));
+        jQuery(this).find('a:nth-child(2)').text(linkParts[linkParts.length-1].slice(9));
     }
 });
 

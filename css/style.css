@@ -336,6 +336,16 @@ fieldset {
     margin: 0 .75em .75em 0;
 }
 
+#search-results .span4.item {
+    height: 20em;
+    overflow: hidden;
+}
+
+.search #cms-content h1 {
+    margin-bottom: 1em !important;
+    margin-top: 0 !important;
+}
+
 #item-filters ul, #search-filters ul {
     list-style-type: none;
 }
