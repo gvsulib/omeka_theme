@@ -126,10 +126,12 @@
 			jQuery('#pdf-text-toggle').click(function() {
 				if(jQuery('#pdf-text-toggle').text() == 'Show Scanned Text') {
 					jQuery('#pdf-text-toggle').text('Hide Scanned Text');
+					jQuery('#pdf-text-text').slideDown(800);
 				} else {
 					jQuery('#pdf-text-toggle').text('Show Scanned Text');
+					jQuery('#pdf-text-text').slideUp(200);
 				}
-				jQuery('#pdf-text-text').slideToggle(800);
+				
 			});
 
 		}
