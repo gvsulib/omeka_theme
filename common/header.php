@@ -20,8 +20,8 @@
 
   <?php fire_plugin_hook('public_head',array('view'=>$this)); ?>
   
-  <link rel="stylesheet" type="text/css" href="//gvsuliblabs.com/libs/fonts/fonts.css" />
-  <link rel="stylesheet" type="text/css" href=" //www.gvsu.edu/cms4/skeleton/0/files/css/cms4.0.min[1476194149000].css" />
+  <link rel="stylesheet" type="text/css" href="https://prod.library.gvsu.edu/libs/fonts/fonts.css" />
+  <link rel="stylesheet" type="text/css" href="https://www.gvsu.edu/cms4/skeleton/0/files/css/cms4.0.min[1476194149000].css" />
 <!-- Stylesheets -->
   <?php
   queue_css_file(array('iconfonts','style'));
@@ -41,12 +41,12 @@
 <?php echo body_tag(array('id' => @$bodyid, 'class' => @$bodyclass)); ?>
 <!--body class="cms-navigation-horizontal cms-javascript"-->
  <a href="#page-content" class="sr-only">Skip to main content</a>
- <link href="//www.gvsu.edu/includes/topbanner/3/header.min%5B0%5D.css" rel="stylesheet" type="text/css">
+ <link href="https://www.gvsu.edu/includes/topbanner/3/header.min%5B0%5D.css" rel="stylesheet" type="text/css">
  <div id="gvsu-cf_header" class="responsive">
      <div id="gvsu-cf_header-inner">
        <div id="gvsu-cf_header-logo">
 
-           <a href="/"><img src="//www.gvsu.edu/includes/topbanner/3/gvsu_logo.png" alt="Grand Valley State University"></a>
+           <a href="https://www.gvsu.edu"><img src="https://www.gvsu.edu/includes/topbanner/3/gvsu_logo.png" alt="Grand Valley State University"></a>
 
        </div>
        
@@ -60,7 +60,7 @@
 
 
    				<a id="cms-navigation-toggle" href="cms-siteindex-index.htm" onclick="return cmsToggleMenu(document.getElementById('cms-navigation'))">
-   					<img src="//www.gvsu.edu/cms4/skeleton/0/files/img/transparent.png" alt="Menu">
+   					<img src="https://www.gvsu.edu/cms4/skeleton/0/files/img/transparent.png" alt="Menu">
    				</a>
 
    			<h1>

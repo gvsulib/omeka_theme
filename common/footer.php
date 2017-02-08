@@ -73,13 +73,13 @@
 
 			<ul>
 				<li>
-					<a href="//www.gvsu.edu/affirmativeactionstatement.htm">GVSU is an EO/AA Institution</a>
+					<a href="https://www.gvsu.edu/affirmativeactionstatement.htm">GVSU is an EO/AA Institution</a>
 				</li>
 				<li>
-					<a href="//www.gvsu.edu/privacystatement.htm">Privacy Policy</a>
+					<a href="https://www.gvsu.edu/privacystatement.htm">Privacy Policy</a>
 				</li>
 				<li>
-					<a href="//www.gvsu.edu/disclosures">Disclosures</a>
+					<a href="https://www.gvsu.edu/disclosures">Disclosures</a>
 				</li>
 				<li>
 					Copyright © 1995-2016 GVSU
