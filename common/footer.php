@@ -97,12 +97,22 @@
         Berlin.dropDown();
 
         if(jQuery('#item-images').find('div.item-file').length > 1) {
-            // Add special meia class to make video and audio larger
+        	// Float PDF to the right
+        	jQuery('#item-images').find('.item-file.application-pdf:first-child').css('float','right').css('margin-right','24%').css('margin-top','3.6em').css('border','1px solid #bbb');
+            // Add special media class to make video and audio larger
             jQuery('#item-images').find('video').closest('div.item-file').addClass('gvsu_media');
             jQuery('#item-images').find('audio').closest('div.item-file').addClass('gvsu_media');
             jQuery('#item-images').find('.image-jpeg:first').css('clear','left');
             var imagePosition = (jQuery('.image-jpeg').index()) +1;
             jQuery('.item-file:nth-child(' + imagePosition + ')').before('<div class="cms-clear" style="width: 100%;"><h3>Supplementary Images</h3></div>');
+
+            // Enumerate the video clips
+            var vidN = 1;
+            jQuery('#item-images').find('.video').each(function() {
+            	jQuery(this).before('<h4>Video ' + vidN + '</h4>');
+            	vidN++;
+            });
+
         } else {
             jQuery('#item-images').find('div.item-file').addClass('gvsu_only_file');
         }

@@ -509,8 +509,20 @@ nav ul.navigation {
     #item-images .gvsu_media
      {
         width: 49%;
+        float: left;
+        
+    }
+
+    #item-images .gvsu_media:nth-child(3) {
+        clear: left;
+    }
+
+    #item-images .gvsu_media .video,
+    #item-images .gvsu_media .audio
+    {
         background-color: #575757;
     }
+
 
     .gvsu_only_file {
         width: auto !important
