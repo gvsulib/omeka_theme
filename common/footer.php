@@ -1,6 +1,10 @@
 <div class="cms-clear"></div>
 <div id="cms-content-footer">
-	<a href="http://labs.library.gvsu.edu/status/?problem" class="cms-report-problem">report a problem with this page</a>
+	<a href="https://prod.library.gvsu.edu/status/?problem" class="cms-report-problem">report a problem with this page</a>
+	<script>
+								var thisUrl = encodeURI(window.location);
+								document.getElementById('problem-link').href = 'https://prod.library.gvsu.edu/status/?problem&url=' + thisUrl;
+							</script>
 </div>
 </div><!-- end content -->
 </div>
@@ -98,7 +102,10 @@
 
         if(jQuery('#item-images').find('div.item-file').length > 1) {
         	// Float PDF to the right
-        	jQuery('#item-images').find('.item-file.application-pdf:first-child').css('float','right').css('margin-right','24%').css('margin-top','3.6em').css('border','1px solid #bbb');
+        	if(jQuery('#item-images').find('.item-file.application-pdf').length < 2) {
+        		jQuery('#item-images').find('.item-file.application-pdf:first-child').css('float','right').css('margin-right','24%').css('margin-top','3.6em').css('border','1px solid #bbb');
+        	}
+        	
             // Add special media class to make video and audio larger
             jQuery('#item-images').find('video').closest('div.item-file').addClass('gvsu_media');
             jQuery('#item-images').find('audio').closest('div.item-file').addClass('gvsu_media');
