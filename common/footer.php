@@ -121,7 +121,12 @@
             });
 
         } else {
-            jQuery('#item-images').find('div.item-file').addClass('gvsu_only_file');
+        	if(jQuery('#item-images').find('.video') > 0) {
+        		jQuery('#item-images').find('div.item-file').addClass('gvsu_only_video');
+        	} else {
+        		jQuery('#item-images').find('div.item-file').addClass('gvsu_only_file');
+        	}
+            
         }
 
         // Add "Read More" links to item browsing
