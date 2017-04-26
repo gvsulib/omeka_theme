@@ -6,7 +6,27 @@ echo head(array('title'=>$pageTitle,'bodyclass' => 'items browse'));
 <h1><?php echo $pageTitle;?> <?php echo __('(%s total)', $total_results); ?></h1>
 
 <nav class="items-nav navigation secondary-nav">
-    <?php echo public_nav_items(); ?>
+
+<?php
+
+//change this code to alter the search options that appear on the right side of the rsearch results screen
+//the $custNavArray contains the options.
+//check the developer documnentation for more info  
+$custNavArray = array(
+        array(
+            'label' =>__('Browse All'),
+            'uri' => url('items/browse'),
+        ));
+        
+        $custNavArray[] = array(
+            'label' => __('New Search'),
+            'uri' => url('items/search')
+        );
+
+echo public_nav_items($custNavArray); 
+
+
+?>
 </nav>
 
 <?php echo item_search_filters(); ?>
@@ -18,7 +38,7 @@ echo head(array('title'=>$pageTitle,'bodyclass' => 'items browse'));
 <?php
 $sortLinks[__('Title')] = 'Dublin Core,Title';
 $sortLinks[__('Creator')] = 'Dublin Core,Creator';
-$sortLinks[__('Date Added')] = 'added';
+//$sortLinks[__('Date Added')] = 'added';
 ?>
 <div id="sort-links">
     <span class="sort-label"><?php echo __('Sort by: '); ?></span><?php echo browse_sort_links($sortLinks); ?>
