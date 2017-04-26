@@ -121,7 +121,7 @@
             });
 
         } else {
-        	if(jQuery('#item-images').find('.video') > 0) {
+        	if(jQuery('#item-images').find('.video').length > 0) {
         		jQuery('#item-images').find('div.item-file').addClass('gvsu_only_video');
         	} else {
         		jQuery('#item-images').find('div.item-file').addClass('gvsu_only_file');
