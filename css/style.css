@@ -266,6 +266,10 @@ fieldset {
     color: #666;
 }
 
+nav.pagination-nav {
+    clear: both;
+}
+
 .pagination {
     float: left;
     padding-left: 0;
@@ -479,8 +483,8 @@ nav ul.navigation {
         margin: 1em 1% 2em 0;
     }
 
-   .collection.record {
-    height: 32em;
+   .collection.record:nth-of-type(4n+4) {
+        clear: left;
    }
 
    #search-results .file {
