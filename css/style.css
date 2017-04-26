@@ -525,7 +525,7 @@ nav ul.navigation {
 
 
     .gvsu_only_file {
-        width: 100% !important
+        width: auto !important
     }
 
      .gvsu_only_file.video-* {
