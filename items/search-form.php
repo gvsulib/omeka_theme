@@ -177,8 +177,9 @@ $formAttributes['method'] = 'GET';
         </div>
     </div>
 </div>
-
-</div>
+<div>
+<!--We've hacked the basic search into the advanced search form-there were too many problems with the way it searches text capture for us to be comfortable with it as a default search.
+We may re-evaluate this at a future date.  -->
 
 <div class="row">
     <div class="span1">

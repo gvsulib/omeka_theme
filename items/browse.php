@@ -7,7 +7,11 @@ echo head(array('title'=>$pageTitle,'bodyclass' => 'items browse'));
 
 <nav class="items-nav navigation secondary-nav">
 
-<?php 
+<?php
+
+//change this code to alter the search options that appear on the right side of the rsearch results screen
+//the $custNavArray contains the options.
+//check the developer documnentation for more info  
 $custNavArray = array(
         array(
             'label' =>__('Browse All'),
