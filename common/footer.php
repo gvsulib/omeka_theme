@@ -1,6 +1,6 @@
 <div class="cms-clear"></div>
 <div id="cms-content-footer">
-	<a href="https://prod.library.gvsu.edu/status/?problem" class="cms-report-problem">report a problem with this page</a>
+	<a href="https://prod.library.gvsu.edu/status/?problem" class="cms-report-problem" id="problem-link">report a problem with this page</a>
 	<script>
 								var thisUrl = encodeURI(window.location);
 								document.getElementById('problem-link').href = 'https://prod.library.gvsu.edu/status/?problem&url=' + thisUrl;

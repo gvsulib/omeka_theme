@@ -528,6 +528,10 @@ nav ul.navigation {
         width: auto !important
     }
 
+     .gvsu_only_file.video-* {
+        width: 100% !important
+    }
+
     /* Navigation */
     #cms-body .cms-navigation > ul > li {
         width: auto;
