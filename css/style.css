@@ -340,9 +340,12 @@ nav.pagination-nav {
     margin: 0 .75em .75em 0;
 }
 
-#search-results .span4.item {
-    height: 20em;
-    overflow: hidden;
+#search-results .span4.item:nth-of-type(4n+1) {
+    clear:left;
+}
+
+#search-results .span4.item a {
+    display: block;
 }
 
 .search #cms-content h1 {
@@ -483,7 +486,8 @@ nav ul.navigation {
         margin: 1em 1% 2em 0;
     }
 
-   .collection.record:nth-of-type(4n+4) {
+   .collection.record:nth-of-type(4n+4),
+   .items .item.record:nth-of-type(4n+1) {
         clear: left;
    }
 
@@ -541,11 +545,6 @@ nav ul.navigation {
         width: auto;
     }
 
-    /* Make collections and item browsing better */
-    .item.record {
-        height: 28em;
-        position: relative;
-    }
 
     .item.record .item-description{
         max-height: 4.5em;
