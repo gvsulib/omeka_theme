@@ -177,7 +177,6 @@ $formAttributes['method'] = 'GET';
         </div>
     </div>
 </div>
-<div>
 <!--We've hacked the basic search into the advanced search form-there were too many problems with the way it searches text capture for us to be comfortable with it as a default search.
 We may re-evaluate this at a future date.  -->
 
@@ -188,18 +187,6 @@ We may re-evaluate this at a future date.  -->
     </div>
 </div>
 </form>
-<div class="row" style="margin:2em 0;padding:1em 0;border-bottom:1px solid #ddd;">
-
-<form id="search-form" name="search-form" action="/search" method="get">
-                  <label for="query">Full-Text Search</label>
-                  <input name="query" id="query" title="Search" type="text">
-                <fieldset>  
-                <label><input type="radio" name="query_type" id="query_type-keyword" value="keyword" checked="checked"> Keyword</label><br>
-		<label><input type="radio" name="query_type" id="query_type-boolean" value="boolean"> Boolean</label><br>
-		<label><input type="radio" name="query_type" id="query_type-exact_match" value="exact_match"> Exact match</label>        </fieldset>
-               <br> <input name="submit_search" class="submit" type="submit" value="Search" label="Full-Text Search">
-        </form>
-	</div>
 </div>
 
 <?php echo js_tag('items-search'); ?>

@@ -8,6 +8,8 @@ $searchRecordTypes = get_search_record_types();
 <?php echo search_filters(); ?>
 <?php if ($total_results): ?>
 <?php echo pagination_links(); ?>
+
+<div class="cms-clear"></div>
 <div id="search-results" class="row">
 
 <?php $filter = new Zend_Filter_Word_CamelCaseToDash; ?>
@@ -20,7 +22,19 @@ $searchRecordTypes = get_search_record_types();
                     <?php echo link_to($record, 'show', $recordImage, array('class' => 'image')); ?>
             <?php endif; ?>
             <a href="<?php echo record_url($record, 'show'); ?>"><?php echo $searchText['title'] ? $searchText['title'] : '[Unknown]'; ?></a><br />
-             <?php echo '<span class="item-type">' . $searchRecordTypes[$recordType] .'</span>'; ?>
+            <?php if ($description = metadata($record, array('Dublin Core', 'Description'), array('snippet'=>250))): ?>
+    <div class="item-description">
+        <?php echo $description; ?>
+    </div>
+    <?php endif; ?>
+
+   <?php if (metadata($record, 'has tags')): ?>
+    <div class="tags"><p><strong><?php echo __('Tags'); ?>:</strong>
+        <?php echo tag_string('items'); ?></p>
+    </div>
+    <?php endif; ?>
+
+
         </div>
         <?php endforeach; ?>
    </div>
