@@ -4,7 +4,8 @@
 
     <h3><?php echo __('Files'); ?></h3>
     <div id="item-images" class="row">
-         <?php echo files_for_item(); ?>
+	
+         <?php echo files_for_item(array('linkAttributes' => array('target'=>'_blank'))); ?>
     </div>
     <div class="cms-clear"></div>
 
