@@ -50,7 +50,7 @@ $formAttributes['method'] = 'GET';
                 //[type] = 'contains'
                 //[terms] = 'foobar'
                 //etc
-                echo '<div class="row">
+                echo '<div class="search-entry"><div class="row">
                         <div class="span4">';
                 echo $this->formSelect(
                     "advanced[$i][element_id]",
@@ -96,15 +96,15 @@ $formAttributes['method'] = 'GET';
                 );
                 ?>
 
-                <button type="button" class="btn btn-default" disabled="disabled" style="display: none;"><?php echo __('Remove field'); ?></button>
                 </div>
             </div>
+		 <button type="button" class="btn btn-default remove_search" disabled="disabled" style="display: none;"><?php echo __('Remove field'); ?></button>
+	</div>
         <?php endforeach; ?>
         <div class="cms-clear"></div>
-        <button type="button" class="btn btn-primary" style="font-size:.75em;"><?php echo __('Add a Field'); ?></button>
     </div>
  <div class="cms-clear"></div>
-   
+  <button type="button" class="btn btn-primary add_search" style="font-size:.75em;"><?php echo __('Add a Field'); ?></button> 
  <div class="row" style="margin-top:1.5em;padding-top:.75em;border-top: 1px solid #ddd;">
     <div class="field span8">
         <?php echo $this->formLabel('collection-search', __('Search By Collection')); ?>
@@ -177,8 +177,6 @@ $formAttributes['method'] = 'GET';
         </div>
     </div>
 </div>
-<!--We've hacked the basic search into the advanced search form-there were too many problems with the way it searches text capture for us to be comfortable with it as a default search.
-We may re-evaluate this at a future date.  -->
 
 <div class="row">
     <div class="span1">
@@ -193,21 +191,8 @@ We may re-evaluate this at a future date.  -->
 <style>
 #gvsu-cf_header-search { display: none !important; }
 </style>
-<!--script type="text/javascript">
+<script type="text/javascript">
     jQuery(document).ready(function () {
         Omeka.Search.activateSearchButtons();
-
-        
-        jQuery('#more-search-options').hide();
-        jQuery('#more-toggle').text('Show More Options').click(function() {
-            jQuery('#more-search-options').slideToggle(400);
-
-            if(jQuery('#more-toggle').text() == 'Show More Options') {
-                 jQuery('#more-toggle').text('Hide Additional Options');
-            } else {
-                jQuery('#more-toggle').text('Show More Options');
-            }
-        });
-
     });
-</script-->
+</script>
