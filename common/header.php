@@ -84,7 +84,9 @@
 		<form id="search-form" name="search-form" action="/search" method="get">
                 <label for="query">Search Digital Collections</label> <a class="advanced-button" href="/items/search">Advanced Search</a><button name="submit_search" id="submit_search" type="submit" value="Search">Search</button>
                   <input name="query" id="query" title="Search" type="text">
-                <fieldset>
+        	<fieldset style="border-style: none">       
+		Choose type of search:</br>
+		
                 <label><input type="radio" name="query_type" id="query_type-keyword" value="keyword" checked="checked"> Keyword</label><br>
                 <label><input type="radio" name="query_type" id="query_type-boolean" value="boolean"> Boolean</label><br>
                 <label><input type="radio" name="query_type" id="query_type-exact_match" value="exact_match"> Exact match</label>        </fieldset>
