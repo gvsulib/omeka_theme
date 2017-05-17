@@ -63,6 +63,20 @@
 #advanced-form.closed {
     display: none;
 }
+.search-entry .row div {
+    margin-bottom: .25em;
+    padding-bottom: 0;
+}
+
+button.remove_search {
+    display: inline;
+    float: right;
+    margin-right: 1.4em;
+    font-size: .75em;
+    border: 0;
+    padding: 0;
+    color: #1b6ec2;
+}
 #gvsu-cf_header-search label {
     font-size: .8em;
 }
