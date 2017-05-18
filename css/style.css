@@ -16,6 +16,7 @@
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    margin-bottom: .1em;
 }
 #search-form input[type="text"], 
 #search-form button {
