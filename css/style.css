@@ -82,7 +82,7 @@ button.remove_search {
 }
 #gvsu-cf_header-search a {
 	font-size: .8em;
-	float: left;
+	float: right;
 }
 
 #gvsu-cf_header-search button {
