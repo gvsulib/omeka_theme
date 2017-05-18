@@ -22,6 +22,7 @@
   
   <link rel="stylesheet" type="text/css" href="https://prod.library.gvsu.edu/libs/fonts/fonts.css" />
   <link rel="stylesheet" type="text/css" href="https://www.gvsu.edu/cms4/skeleton/0/files/css/cms4.0.min[1476194149000].css" />
+
 <!-- Stylesheets -->
   <?php
   queue_css_file(array('iconfonts','style'));
@@ -77,24 +78,26 @@
          	
 		<form id="search-form" name="search-form" action="/search" method="get">
                 
-		<fieldset>
-		<label for="query">Search Digital Collections</label> <a href="/items/search">Advanced Search</a><button name="submit_search" id="submit_search" type="submit" value="Search">Search</button>
-                  <input name="query" id="query" title="Search" type="text">
+	
+		<label for="query">Search Digital Collections</label> 
+		<a href="/items/search" ID="advanced-search-link">Advanced Search</a>
+		<button name="submit_search" id="submit_search" type="submit" value="Search">Search</button>
+                <input name="query" id="query" title="Search" type="text">
         	      
 		<label for="query_type">Choose type of search:</label>
 		
                 <label><input type="radio" name="query_type" id="query_type-keyword" value="keyword" checked="checked"> Keyword</label>
                 <label><input type="radio" name="query_type" id="query_type-boolean" value="boolean"> Boolean</label>
-                <label><input type="radio" name="query_type" id="query_type-exact_match" value="exact_match"> Exact match</label>        </fieldset>
+                <label><input type="radio" name="query_type" id="query_type-exact_match" value="exact_match"> Exact match</label>       
 
-        </form>
+        	</form>
 
  
-       </div>
+       		</div>
    			
-   		</div>
    	</div>
    </div>
+</div>
 
 <a name="page-content"></a>
 	<div id="cms-body-wrapper">
