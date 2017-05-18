@@ -39,56 +39,52 @@
   <?php echo head_js(); ?>
 </head>
 <?php echo body_tag(array('id' => @$bodyid, 'class' => @$bodyclass)); ?>
+
 <!--body class="cms-navigation-horizontal cms-javascript"-->
- <a href="#page-content" class="sr-only">Skip to main content</a>
- <link href="https://www.gvsu.edu/includes/topbanner/3/header.min%5B0%5D.css" rel="stylesheet" type="text/css">
- <div id="gvsu-cf_header" class="responsive">
-     <div id="gvsu-cf_header-inner">
-       <div id="gvsu-cf_header-logo">
+ 
+<a href="#page-content" class="sr-only">Skip to main content</a>
 
-           <a href="https://www.gvsu.edu"><img src="https://www.gvsu.edu/includes/topbanner/3/gvsu_logo.png" alt="Grand Valley State University"></a>
+<link href="https://www.gvsu.edu/includes/topbanner/3/header.min%5B0%5D.css" rel="stylesheet" type="text/css">
+ 
+<div id="gvsu-cf_header" class="responsive">
+	<div id="gvsu-cf_header-inner">
+       		<div id="gvsu-cf_header-logo">
 
-       </div>
+           	<a href="https://www.gvsu.edu"><img src="https://www.gvsu.edu/includes/topbanner/3/gvsu_logo.png" alt="Grand Valley State University"></a>
+
+       		</div>
        
-     </div>
-   </div>
+     	</div>
+</div>
 
-   <div id="cms-header-wrapper">
-   	<div id="cms-header">
-   		<div id="cms-header-inner">
+<div id="cms-header-wrapper">
+	<div id="cms-header">
+		<div id="cms-header-inner">
 
+		<a id="cms-navigation-toggle" href="cms-siteindex-index.htm" onclick="return cmsToggleMenu(document.getElementById('cms-navigation'))">
+   		<img src="https://www.gvsu.edu/cms4/skeleton/0/files/img/transparent.png" alt="Menu"></a>
 
+   		<h1><?php echo link_to_home_page(theme_logo()); ?></h1>
+         	<div id="cms-navigation" class="cms-navigation" role="navigation">
+             	<?php echo public_nav_main(); ?>
+         	</div>
 
-   				<a id="cms-navigation-toggle" href="cms-siteindex-index.htm" onclick="return cmsToggleMenu(document.getElementById('cms-navigation'))">
-   					<img src="https://www.gvsu.edu/cms4/skeleton/0/files/img/transparent.png" alt="Menu">
-   				</a>
+         	<div id="mobile-nav" role="navigation" aria-label="<?php echo __('Mobile Navigation'); ?>">
+             	<?php echo public_nav_main(); ?>
+         	</div>
 
-   			<h1>
-   				<?php echo link_to_home_page(theme_logo()); ?>
-
-   			</h1>
-         <div id="cms-navigation" class="cms-navigation" role="navigation">
-             <?php
-                  echo public_nav_main();
-             ?>
-         </div>
-
-         <div id="mobile-nav" role="navigation" aria-label="<?php echo __('Mobile Navigation'); ?>">
-             <?php
-                  echo public_nav_main();
-             ?>
-         </div>
-
-        <div id="gvsu-cf_header-search">
-         
+        	<div id="gvsu-cf_header-search">
+         	
 		<form id="search-form" name="search-form" action="/search" method="get">
-                <label for="query">Search Digital Collections</label> <a class="advanced-button" href="/items/search">Advanced Search</a><button name="submit_search" id="submit_search" type="submit" value="Search">Search</button>
+                
+		<fieldset>
+		<label for="query">Search Digital Collections</label> <a href="/items/search">Advanced Search</a><button name="submit_search" id="submit_search" type="submit" value="Search">Search</button>
                   <input name="query" id="query" title="Search" type="text">
-        	<fieldset style="border-style: none">       
-		Choose type of search:</br>
+        	      
+		<label for="query_type">Choose type of search:</label>
 		
-                <label><input type="radio" name="query_type" id="query_type-keyword" value="keyword" checked="checked"> Keyword</label><br>
-                <label><input type="radio" name="query_type" id="query_type-boolean" value="boolean"> Boolean</label><br>
+                <label><input type="radio" name="query_type" id="query_type-keyword" value="keyword" checked="checked"> Keyword</label>
+                <label><input type="radio" name="query_type" id="query_type-boolean" value="boolean"> Boolean</label>
                 <label><input type="radio" name="query_type" id="query_type-exact_match" value="exact_match"> Exact match</label>        </fieldset>
 
         </form>
