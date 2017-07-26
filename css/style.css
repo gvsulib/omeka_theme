@@ -83,16 +83,16 @@ button.remove_search {
 }
 #gvsu-cf_header-search a {
 	font-size: .8em;
-	float: right;
 }
 
 #gvsu-cf_header-search button {
     background: #fafafa;
     color: white;
     position: absolute;
-    right: 0;
-    top: 1.3em;
+    right: 0px;
+    top: 47px;
     width: 30px;
+    height: 30px;
     text-indent: -9999px;
 }
 #gvsu-cf_header-search button::after {
@@ -114,16 +114,22 @@ button.remove_search {
 }
 
 #gvsu-cf_header-search legend {
-  font-weight: bold;
+  font-weight: normal;
+  font-size: 1em;
 }
+#gvsu-cf_header-search fieldset {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+
+}
+
 fieldset {
     min-height: 20px;
-    padding: none;
+    padding: 0px;
     margin-bottom: 20px;
     background-color: #fafafa;
-    border: 1px solid #border-style: dot-dash;;
-    border-radius: none;
-    -webkit-box-shadow: none;
+    border: none;
     box-shadow: none;
   }
 #advanced-form input[type="radio"] {
@@ -131,6 +137,7 @@ fieldset {
 }
 #gvsu-cf_header-search {
   text-align: left !important;
+
 }
 #cms-body h1, 
 #cms-body h2, 

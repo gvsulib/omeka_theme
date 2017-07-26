@@ -1,3 +1,5 @@
+<!--not entirely sure, but this may be the code that generates the simple search box automatically.  If so, we are not using this-->
+
 <?php
 $pageTitle = __('Search Items');
 echo head(array('title' => $pageTitle,

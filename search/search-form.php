@@ -1,3 +1,6 @@
+
+<!--code to generate the simple search box.  We do not use this in this theme as of now, instead the HTML code is pasted directly into the page-->
+
 <?php echo $this->form('search-form', $options['form_attributes']); ?>
     <?php echo $this->formText('query', $filters['query'], array('title' => __('Search'))); ?>
     <?php if ($options['show_advanced']): ?>

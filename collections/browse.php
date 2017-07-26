@@ -3,7 +3,8 @@ $pageTitle = __('Browse Collections');
 echo head(array('title'=>$pageTitle,'bodyclass' => 'collections browse'));
 ?>
 
-<h1><?php echo $pageTitle; ?> <?php echo __('(%s total)', $total_results); ?></h1>
+<h2><?php echo $pageTitle; ?> <?php echo __('(%s total)', $total_results); ?></h2>
+
 <?php echo pagination_links(); ?>
 
 <?php
@@ -17,13 +18,19 @@ $sortLinks[__('Date Added')] = 'added';
 <?php foreach (loop('collections') as $collection): ?>
 
 <div class="collection record">
+	<!--formulate text for the alt attributes.  all images that are functonal (I.E. links) must have one for screen readers-->
+   <?php if (metadata('collection', array('Dublin Core', 'Title'))) { 
+	$altText = 'Browse the ' . metadata('collection', array('Dublin Core', 'Title')) . ' collection';
+	} else {
+	$altText = 'Browse this collection';
+	}
+   ?>
+	 
 
-   
-
-    <?php if ($collectionImage = record_image('collection', 'square_thumbnail')): ?>
+    <?php if ($collectionImage = record_image('collection', 'square_thumbnail', array('alt' => $altText))): ?>
         <?php echo link_to_collection($collectionImage, array('class' => 'image')); ?>
     <?php endif; ?>
-     <h2><?php echo link_to_collection(); ?></h2>
+     <h3><?php echo link_to_collection(); ?></h3>
     <div class="collection-meta">
 
     <?php if (metadata('collection', array('Dublin Core', 'Description'))): ?>
