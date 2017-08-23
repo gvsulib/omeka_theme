@@ -35,10 +35,9 @@ $formAttributes['method'] = 'GET';
 
 <div id="more-search-options">
     <div id="search-narrow-by-fields" class="field">
-        <div class="row">
-            <div style="margin:2em 0;padding:.75em 0;border-top:1px solid #ddd;border-bottom:1px solid #ddd;" class="span3"><?php echo __('Narrow by Specific Fields'); ?>
-            </div>
-        </div>
+<fieldset class="advanced-narrow-fieldset">
+<legend class="advanced-narrow-legend">Narrow by Specific Fields</legend>
+
         <?php
         // If the form has been submitted, retain the number of search
         // fields used and rebuild the form
@@ -106,6 +105,7 @@ $formAttributes['method'] = 'GET';
                 </div>
             </div>
 		 <button type="button" class="btn btn-default remove_search" disabled="disabled" style="display: none;"><?php echo __('Remove field'); ?></button>
+	
 	</div>
         <?php endforeach; ?>
         <div class="cms-clear"></div>
@@ -115,7 +115,7 @@ $formAttributes['method'] = 'GET';
 
 <!--button to add additional search field boxes-->
 <button type="button" class="btn btn-primary add_search" style="font-size:.75em;"><?php echo __('Add a Field'); ?></button> 
- 
+</fieldset> 
 
 <div class="row" style="margin-top:1.5em;padding-top:.75em;border-top: 1px solid #ddd;">
     <div class="field span8">

@@ -1,5 +1,5 @@
 <div class="cms-clear"></div>
-<div id="cms-content-footer">
+<div id="cms-content-footer" role="footer">
 	<a href="https://prod.library.gvsu.edu/status/?problem" class="cms-report-problem" id="problem-link">report a problem with this page</a>
 	<script>
 		var thisUrl = encodeURI(window.location);
@@ -21,7 +21,7 @@
 			<li><h4>Address</h4>
 
 			<p class="vcard">
-			<span class="adr">
+			<address class="adr">
 
 			<span class="fn">Special Collections and</span>
 			<br>
@@ -42,7 +42,7 @@
 			<span class="postal-code ">49401</span>
 			<br>
 
-			</span>
+			</address>
 			</p>
 
 			</li>
@@ -76,7 +76,7 @@
 <!--copyright links-->
   <div id="cms-copyright-wrapper">
 	<div id="cms-copyright">
-		<div id="cms-copyright-inner">
+		<div id="cms-copyright-inner" role="contentinfo">
 
 			<ul>
 				<li>

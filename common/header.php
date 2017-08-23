@@ -60,7 +60,7 @@
 
 <link href="https://www.gvsu.edu/includes/topbanner/3/header.min%5B0%5D.css" rel="stylesheet" type="text/css">
  
-<div id="gvsu-cf_header" class="responsive">
+<div id="gvsu-cf_header" class="responsive" role="banner">
 	<div id="gvsu-cf_header-inner">
        		<div id="gvsu-cf_header-logo">
 
@@ -71,8 +71,8 @@
      	</div>
 </div>
 <!--Topmost navigation items-->
-<div id="cms-header-wrapper">
-	<div id="cms-header">
+<div id="cms-header-wrapper" role="header">
+<div id="cms-header">
 		<div id="cms-header-inner">
 
 		<a id="cms-navigation-toggle" href="cms-siteindex-index.htm" onclick="return cmsToggleMenu(document.getElementById('cms-navigation'))">
@@ -87,7 +87,7 @@
              	<?php echo public_nav_main(); ?>
          	</div>
 
-        	<div id="gvsu-cf_header-search">
+        	<div id="gvsu-cf_header-search" role="search">
          	<!--the simple search form.  Usually this is generated automatically by a snippet of PHP code (simple_search()) but we wanted to customize it, so we have actually pasted the search form code itself into the header.  simple_search is, thus, not being used in this theme.-->
 		<form id="search-form" name="search-form" action="/search" method="get">
                 
@@ -97,11 +97,12 @@
 		<a href="/items/search" ID="advanced-search-link">Advanced Search</a>
                 <input name="query" id="query" title="Search" type="text">
         	     <button name="submit_search" id="submit_search" type="submit" value="Search">Search</button> 
-		<span style="font-size: .8em">Choose type of search:</span>
+		<span role="radiogroup"><span style="font-size: .8em">Choose type of search:</span>
 		
                 <label for="query_type-keyword"><input type="radio" name="query_type" id="query_type-keyword" value="keyword" checked="checked"> Keyword</label>
                 <label for="query_type-boolean"><input type="radio" name="query_type" id="query_type-boolean" value="boolean"> Boolean</label>
                 <label for="query_type-exact_match"><input type="radio" name="query_type" id="query_type-exact_match" value="exact_match"> Exact match</label>       
+		</span>
 		</fieldset>
         	</form>
 
@@ -114,7 +115,7 @@
 <!--Begin page body-->
 <a name="page-content"></a>
 	<div id="cms-body-wrapper">
-		<div id="cms-body">
+		<div id="cms-body" role="main">
 			<div id="cms-body-inner">
 				<div id="cms-body-table">
 					<div id="cms-content">

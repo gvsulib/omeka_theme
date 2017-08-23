@@ -121,17 +121,21 @@ button.remove_search {
 	padding: 0px;
 	margin: 0px;
 	border: none;
+	background-color: transparent;
+	padding: 0px;
+	box-shadow: none;
 
 }
 
-fieldset {
-    min-height: 20px;
-    padding: 0px;
-    margin-bottom: 20px;
-    background-color: #fafafa;
-    border: none;
-    box-shadow: none;
-  }
+.advanced-narrow-fieldset {
+	background-color: transparent;
+	min-height: 0px;
+	margin: 0px;
+	border: none;
+	padding: 0px;
+        box-shadow: none;
+}
+
 #advanced-form input[type="radio"] {
     margin-right: 5px;
 }
@@ -232,6 +236,13 @@ fieldset {
     font-family: AlternateGothicFSNo3,Arial,sans-serif;
     color: #4E4E4E;
 }
+
+address {
+	font-style: normal;
+	display: block;
+	
+}
+
 
 #sort-links {
     float: right;
@@ -451,8 +462,16 @@ a.download-file {
   border: 1px solid #bbb !important;
 }
 
+.advanced-narrow-legend {
+	font-family: inherit;
+  	font-size: inherit;
+	margin-top:.5em;
+	margin-bottom: .5em;
+}
+
 #advanced-form legend {
   padding: .5em 0 .25em;
+  
 }
 
 nav ul.navigation {
@@ -517,7 +536,7 @@ nav ul.navigation {
     }
 
    .collection.record:nth-of-type(4n+4),
-   .items .item.record:nth-of-type(4n) {
+   .items .item.record:nth-of-type(4n+1) {
         clear: left;
    }
 
