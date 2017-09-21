@@ -3,7 +3,7 @@ $pageTitle = __('Search') . ' ' . __('(%s total)', $total_results);
 echo head(array('title' => $pageTitle, 'bodyclass' => 'search'));
 $searchRecordTypes = get_search_record_types();
 ?>
-<h1><?php echo $pageTitle; ?></h1>
+<h2><?php echo $pageTitle; ?></h2>
 
 <?php echo search_filters(); ?>
 <?php if ($total_results): ?>
@@ -18,10 +18,18 @@ $searchRecordTypes = get_search_record_types();
 <?php $recordType = $searchText['record_type']; ?>
 <?php set_current_record($recordType, $record); ?>
         <div class="span4 <?php echo strtolower($filter->filter($recordType)); ?>">
-            <?php if ($recordImage = record_image($recordType, 'square_thumbnail')): ?>
+            
+	 <?php if (metadata($record, array('Dublin Core', 'Title'))) { 
+        $altText = 'Go to ' . metadata($record, array('Dublin Core', 'Title'));
+        } else {
+        $altText = 'Go to this item';
+        }
+   	?>
+
+		<?php if ($recordImage = record_image($recordType, 'square_thumbnail', array('alt' => $altText))): ?>
                     <?php echo link_to($record, 'show', $recordImage, array('class' => 'image')); ?>
             <?php endif; ?>
-            <a href="<?php echo record_url($record, 'show'); ?>"><?php echo $searchText['title'] ? $searchText['title'] : '[Unknown]'; ?></a><br />
+            <a href="<?php echo record_url($record, 'show'); ?>"><?php echo $searchText['title'] ? '<H3>' . $searchText['title']. '</h3>' : '<h3>[Unknown]</h3>'; ?></a><br />
             <?php if ($description = metadata($record, array('Dublin Core', 'Description'), array('snippet'=>250))): ?>
     <div class="item-description">
         <?php echo $description; ?>

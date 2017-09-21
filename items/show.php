@@ -1,11 +1,13 @@
+<!--Template controlling the individual view for an item or file-->
+
 <?php echo head(array('title' => metadata('item', array('Dublin Core', 'Title')),'bodyclass' => 'items show')); ?>
 <div id="primary">
-    <h1><?php echo metadata('item', array('Dublin Core','Title')); ?></h1>
+    <h2><?php echo metadata('item', array('Dublin Core','Title')); ?></h2>
 
     <h3><?php echo __('Files'); ?></h3>
     <div id="item-images" class="row">
 	
-         <?php echo files_for_item(array('linkAttributes' => array('target'=>'_blank'))); ?>
+         <?php echo files_for_item(array('linkAttributes' => array('target'=>'_blank'), 'imgAttributes' => array('alt' => 'Link to full-size'))); ?>
     </div>
     <div class="cms-clear"></div>
 

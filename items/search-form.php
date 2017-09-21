@@ -1,3 +1,5 @@
+<!--Template for the advanced search screen-->
+
 <?php
 if (!empty($formActionUri)):
     $formAttributes['action'] = $formActionUri;
@@ -7,6 +9,9 @@ else:
 endif;
 $formAttributes['method'] = 'GET';
 ?>
+
+
+
 <div class="lib-form">
 <form <?php echo tag_attributes($formAttributes); ?>>
 <div class="row">
@@ -26,12 +31,13 @@ $formAttributes['method'] = 'GET';
 
 <div id="more-toggle"></div>
 
+<!--The code above generates the input box, this code generates the rest of the form-->
+
 <div id="more-search-options">
     <div id="search-narrow-by-fields" class="field">
-        <div class="row">
-            <div style="margin:2em 0;padding:.75em 0;border-top:1px solid #ddd;border-bottom:1px solid #ddd;" class="span3"><?php echo __('Narrow by Specific Fields'); ?>
-            </div>
-        </div>
+<fieldset class="advanced-narrow-fieldset">
+<legend class="advanced-narrow-legend">Narrow by Specific Fields</legend>
+
         <?php
         // If the form has been submitted, retain the number of search
         // fields used and rebuild the form
@@ -99,13 +105,19 @@ $formAttributes['method'] = 'GET';
                 </div>
             </div>
 		 <button type="button" class="btn btn-default remove_search" disabled="disabled" style="display: none;"><?php echo __('Remove field'); ?></button>
+	
 	</div>
         <?php endforeach; ?>
         <div class="cms-clear"></div>
     </div>
  <div class="cms-clear"></div>
-  <button type="button" class="btn btn-primary add_search" style="font-size:.75em;"><?php echo __('Add a Field'); ?></button> 
- <div class="row" style="margin-top:1.5em;padding-top:.75em;border-top: 1px solid #ddd;">
+  
+
+<!--button to add additional search field boxes-->
+<button type="button" class="btn btn-primary add_search" style="font-size:.75em;"><?php echo __('Add a Field'); ?></button> 
+</fieldset> 
+
+<div class="row" style="margin-top:1.5em;padding-top:.75em;border-top: 1px solid #ddd;">
     <div class="field span8">
         <?php echo $this->formLabel('collection-search', __('Search By Collection')); ?>
         <div class="inputs">
@@ -177,7 +189,7 @@ $formAttributes['method'] = 'GET';
         </div>
     </div>
 </div>
-
+<!--submit button-->
 <div class="row">
     <div class="span1">
         <?php if (!isset($buttonText)) $buttonText = __('Search for Items'); ?>
@@ -186,11 +198,15 @@ $formAttributes['method'] = 'GET';
 </div>
 </form>
 </div>
-
+<!--Jquery code that powers the interactive parts of the form, such as the buttons that add and remove additional search fields-->
 <?php echo js_tag('items-search'); ?>
+
+<!--hudes the header, which is important because we don't want to simple asearch to appear on this page-->
 <style>
 #gvsu-cf_header-search { display: none !important; }
 </style>
+
+<!--jquery script that invokes and sets up the interactive scripts previously loaded-->
 <script type="text/javascript">
     jQuery(document).ready(function () {
         Omeka.Search.activateSearchButtons();

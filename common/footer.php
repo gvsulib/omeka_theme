@@ -1,79 +1,82 @@
 <div class="cms-clear"></div>
-<div id="cms-content-footer">
+<div id="cms-content-footer" role="footer">
 	<a href="https://prod.library.gvsu.edu/status/?problem" class="cms-report-problem" id="problem-link">report a problem with this page</a>
 	<script>
-								var thisUrl = encodeURI(window.location);
-								document.getElementById('problem-link').href = 'https://prod.library.gvsu.edu/status/?problem&url=' + thisUrl;
-							</script>
-</div>
-</div><!-- end content -->
+		var thisUrl = encodeURI(window.location);
+		document.getElementById('problem-link').href = 'https://prod.library.gvsu.edu/status/?problem&url=' + thisUrl;
+	</script>
 </div>
 </div>
+
+<!-- end content -->
 </div>
+</div>
+</div>
+
+<!--Begin contact info-->
 <div id="cms-footer-wrapper">
-		<div id="cms-footer">
-			<div id="cms-footer-inner">
-				<ul>
+	<div id="cms-footer">
+		<div id="cms-footer-inner">
+			<ul>
+			<li><h4>Address</h4>
 
-						<li>
+			<p class="vcard">
+			<address class="adr">
 
-								<h4>Address</h4>
+			<span class="fn">Special Collections and</span>
+			<br>
 
-									<p class="vcard">
-										<span class="adr">
+			<span class="fn">University Archives</span>
+			<br>
 
-													<span class="fn">Special Collections and</span>
-													<br>
+			<span class="street-address">Seidman House</span>
+			<br>
 
-													<span class="fn">University Archives</span>
-													<br>
+			<span class="street-address">1 Campus Drive</span>
+			<br>
 
-													<span class="street-address">Seidman House</span>
-													<br>
+			<span class="locality">Allendale</span>,
 
-													<span class="street-address">1 Campus Drive</span>
-													<br>
+			<span class="region">Michigan</span>
 
-													<span class="locality">Allendale</span>,
+			<span class="postal-code ">49401</span>
+			<br>
 
-													<span class="region">Michigan</span>
+			</address>
+			</p>
 
-													<span class="postal-code ">49401</span>
-													<br>
+			</li>
 
-										</span>
-									</p>
+			<li>
 
-						</li>
+			<h4>Contact</h4>
 
-						<li>
+			<p class="vcard">
 
-								<h4>Contact</h4>
+			<span class="tel">
+			<span class="type">Phone</span>:
+			<span class="value">
+			<a href="tel:616-331-2749">(616) 331-2749</a>
+			</span>
+			</span>
+			<br>
 
-									<p class="vcard">
+			<a href="mailto:collections@gvsu.edu" class="email">collections@gvsu.edu</a>
+			<br>
 
-												<span class="tel">
-													<span class="type">Phone</span>:
-													<span class="value">
-														<a href="tel:616-331-2749">(616) 331-2749</a>
-													</span>
-												</span>
-												<br>
+			</p>
 
-												<a href="mailto:collections@gvsu.edu" class="email">collections@gvsu.edu</a>
-												<br>
+			</li>
 
-									</p>
-
-						</li>
-
-				</ul>
+			</ul>
 			</div>
 		</div>
 	</div>
+
+<!--copyright links-->
   <div id="cms-copyright-wrapper">
 	<div id="cms-copyright">
-		<div id="cms-copyright-inner">
+		<div id="cms-copyright-inner" role="contentinfo">
 
 			<ul>
 				<li>
