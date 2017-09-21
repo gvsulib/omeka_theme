@@ -2,7 +2,7 @@
 <div id="cms-content-footer" role="footer">
 	<a href="https://prod.library.gvsu.edu/status/?problem" class="cms-report-problem" id="problem-link">report a problem with this page</a>
 	<script>
-		var thisUrl = encodeURI(window.location);
+		var thisUrl = encodeURIComponent(window.location);
 		document.getElementById('problem-link').href = 'https://prod.library.gvsu.edu/status/?problem&url=' + thisUrl;
 	</script>
 </div>
