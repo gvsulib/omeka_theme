@@ -142,7 +142,33 @@
 
         }
 
-        // Isolate Vets History videos, fix PDFs without thumbnails
+        // Isolate Vets History Collection in browse, fix PDFs with default thumbnail
+		function getQueryVariable(variable)
+		{
+		       var query = window.location.search.substring(1);
+		       console.log(query);
+		       var vars = query.split("&");
+		       console.log(vars);
+		       for (var i=0;i<vars.length;i++) {
+		               var pair = vars[i].split("=");
+		               if(pair[0] == variable){return pair[1];}
+		       }
+		       return(false);
+		} 
+
+		if(getQueryVariable('collection') == 30) {
+			
+			// Vets History Collections Page
+
+			jQuery('div.item-img').find('img').each(function() {
+				if(jQuery(this).attr('src') == 'https://digitalcollections.library.gvsu.edu/application/views/scripts/images/fallback-file.png') {
+					jQuery(this).attr('src','https://prod.library.gvsu.edu/labs/omeka/vetsThumbnail.jpg').css('border','1px solid rgb(187,187,187)');
+				}
+			});
+
+		}
+
+        // Isolate Vets History videos on item record pages, fix PDFs without thumbnails
 
 		var vetsThumb = 'https://prod.library.gvsu.edu/labs/omeka/vetsThumbnail.jpg';
 
