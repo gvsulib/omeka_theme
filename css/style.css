@@ -536,7 +536,7 @@ nav ul.navigation {
     }
 
    .collection.record:nth-of-type(4n+4),
-   .items .item.record:nth-of-type(4n+1) {
+   .items .item.record:nth-of-type(4n+4) {
         clear: left;
    }
 
