@@ -96,10 +96,7 @@
 	</div>
 </div>
 
-<?php 
-// Insert custom GVSU JavaScript 
-queue_js_file('gvsu_scripts'); 
-?>
+<script src="/themes/gvsu/javascripts/gvsu_scripts.js"></script>
 
 </body>
 
