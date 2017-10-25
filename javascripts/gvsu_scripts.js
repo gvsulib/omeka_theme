@@ -96,6 +96,33 @@ jQuery(document).ready(function(){
 
 		}
 
+		// Flying Tigers PDF fix
+
+		var ftThumb = 'https://prod.library.gvsu.edu/labs/omeka/vetsThumbnail.jpg';
+
+		if((jQuery('#collection').length > 0) && (jQuery('#collection .element-text').text() == 'Flying Tigers Interviews')) {
+
+		console.log('This is a Flying Tigers item page');
+			
+			// Vets History Item record page (or at least a related collection)
+			jQuery('#item-images').find('.item-file.application-pdf').find('a').each(function() {
+
+				console.log('Checking PDF link for thumbnail image');
+
+				if(jQuery(this).find('img').length <= 0) { // No image
+				    console.log('No image - adding thumbnail');
+
+				    // Code to add thumbnail image
+					jQuery(this).html('<img src="' + ftThumb + '" class="thumb" alt="Outline of Vets History Interview" />');
+
+					// Code to add styles to parent element for proper display
+					jQuery(this).parent('.item-file.application-pdf').css('margin-top','3.6em').css('border','1px solid rgb(187,187,187)');
+				}
+
+			});
+
+		}
+
         // Hide OCRed PDF text unless it is asked for
         if(jQuery('#pdf-text-text').length > 0) {
 	
