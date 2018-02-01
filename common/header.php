@@ -88,23 +88,8 @@
          	</div>
 
         	<div id="gvsu-cf_header-search" role="search">
-         	<!--the simple search form.  Usually this is generated automatically by a snippet of PHP code (simple_search()) but we wanted to customize it, so we have actually pasted the search form code itself into the header.  simple_search is, thus, not being used in this theme.-->
-		<form id="search-form" name="search-form" action="/search" method="get">
-                
-		<fieldset>
-		<legend>
-		Search Digital Collections</legend>
-		<a href="/items/search" ID="advanced-search-link">Advanced Search</a>
-                <input name="query" id="query" title="Search" type="text">
-        	     <button name="submit_search" id="submit_search" type="submit" value="Search">Search</button> 
-		<span role="radiogroup"><span style="font-size: .8em">Choose type of search:</span>
-		
-                <label for="query_type-keyword"><input type="radio" name="query_type" id="query_type-keyword" value="keyword" checked="checked"> Keyword</label>
-                <label for="query_type-boolean"><input type="radio" name="query_type" id="query_type-boolean" value="boolean"> Boolean</label>
-                <label for="query_type-exact_match"><input type="radio" name="query_type" id="query_type-exact_match" value="exact_match"> Exact match</label>       
-		</span>
-		</fieldset>
-        	</form>
+         	<!--the simple search form. --> 
+           <?php echo search_form(); ?>
 
  
        		</div>
