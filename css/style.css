@@ -57,7 +57,9 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
-
+.show-advanced {
+    display: none;
+}
 
 .search-entry .row div {
     margin-bottom: .25em;
