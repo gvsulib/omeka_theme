@@ -537,13 +537,14 @@ nav ul.navigation {
     height: 18em;
 }
 
+/*
 #search-results .file > a:nth-child(2) {
-    height: 3em;
+    height: 3.5em;
     display: block;
     text-overflow: ellipsis;
     overflow: hidden;
 }
-
+*/
 .collections .item.hentry {
     height: 32em;
 }
