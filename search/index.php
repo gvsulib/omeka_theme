@@ -18,23 +18,46 @@ $searchRecordTypes = get_search_record_types();
 <?php $recordType = $searchText['record_type']; ?>
 <?php set_current_record($recordType, $record); ?>
         <div class="span4 <?php echo strtolower($filter->filter($recordType)); ?>">
-            
-	 <?php if (metadata($record, array('Dublin Core', 'Title'))) { 
-        $altText = 'Go to ' . metadata($record, array('Dublin Core', 'Title'));
+
+    <?php  if (strtolower($filter->filter($recordType)) == "file") {$isFile = true; $parentItem = $record->getItem();} else {$isFile = false;}?>
+     <?php 
+        if ($isFile) {
+            if (metadata($parentItem, array('Dublin Core', 'Title'))) { 
+                $altText = 'Go to a file from' . metadata($parentItem, array('Dublin Core', 'Title'));
+            } else {
+                $altText = 'Go to this item';
+            }
         } else {
-        $altText = 'Go to this item';
+            if (metadata($record, array('Dublin Core', 'Title'))) { 
+                    $altText = 'Go to ' . metadata($record, array('Dublin Core', 'Title'));
+                } else {
+                    $altText = 'Go to this item';
+                }
         }
    	?>
 
 		<?php if ($recordImage = record_image($recordType, 'square_thumbnail', array('alt' => $altText))): ?>
                     <?php echo link_to($record, 'show', $recordImage, array('class' => 'image')); ?>
             <?php endif; ?>
-            <a href="<?php echo record_url($record, 'show'); ?>"><?php echo $searchText['title'] ? '<H3>' . $searchText['title']. '</h3>' : '<h3>[Unknown]</h3>'; ?></a><br />
-            <?php if ($description = metadata($record, array('Dublin Core', 'Description'), array('snippet'=>250))): ?>
+            <a href="<?php echo record_url($record, 'show'); ?>">
+            <?php 
+            if ($isFile) {
+                echo "<H3>File from: " . metadata($parentItem, array('Dublin Core', 'Title'), array('no_escape' => true, 'no_filter' => true)) . "</h3>";
+            } else {
+                echo $searchText['title'] ? '<H3>' . $searchText['title']. '</h3>' : '<h3>[Unknown]</h3>';
+            }
+            ?>
+                </a><br />
+            <?php if ($isFile) {
+                $description = metadata($parentItem, array('Dublin Core', 'Description'), array('snippet'=>250));
+            } else {
+                $description = metadata($record, array('Dublin Core', 'Description'), array('snippet'=>250));
+            }
+            ?>
     <div class="item-description">
         <?php echo $description; ?>
     </div>
-    <?php endif; ?>
+    
 
    <?php if (metadata($record, 'has tags')): ?>
     <div class="tags"><p><strong><?php echo __('Tags'); ?>:</strong>

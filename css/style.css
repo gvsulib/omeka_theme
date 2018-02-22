@@ -378,7 +378,7 @@ nav.pagination-nav {
     margin: 0 .75em .75em 0;
 }
 
-#search-results .span4.item:nth-of-type(4n+1) {
+#search-results .span4:nth-of-type(4n+1) {
     clear:left;
 }
 
@@ -527,27 +527,18 @@ nav ul.navigation {
         width: 24%;
         float:left;
         margin: 1em 1% 2em 0;
+        
     }
-
+    
+    
    .collection.record:nth-of-type(4n+4) {
         clear: left;
    }
+    
 
-   #search-results .file {
-    height: 18em;
-}
-
-/*
-#search-results .file > a:nth-child(2) {
-    height: 3.5em;
-    display: block;
-    text-overflow: ellipsis;
-    overflow: hidden;
-}
-*/
-.collections .item.hentry {
-    height: 32em;
-}
+    .collections .item.hentry {
+        height: 32em;
+    }
 
     #home .col-2,
     .row .span8 {
@@ -588,11 +579,6 @@ nav ul.navigation {
         width: auto;
     }
 
-
-    .item.record .item-description{
-        max-height: 4.5em;
-        overflow: hidden;
-    }
 
     .item.record .item-description{
         max-height: 4.5em;
