@@ -9,6 +9,13 @@ $Item = $file->getItem();
 
 $itemTitle = metadata($Item, array('Dublin Core', 'Title'), array('no_escape' => true, 'no_filter' => true));
 
+if (metadata($file,'mime_type') == "application/pdf") {
+    $isPDF = "application-pdf";
+
+} else {
+    $isPDF = "";
+}
+
 
 ?>
 <?php echo head(array('title' => $fileTitle, 'bodyclass'=>'files show primary-secondary')); ?>
@@ -16,7 +23,16 @@ $itemTitle = metadata($Item, array('Dublin Core', 'Title'), array('no_escape' =>
 <h1><?php echo  "File from: " . $itemTitle; ?></h1>
 
 <div id="primary">
-    <?php echo file_markup($file, array('imageSize'=>'fullsize')); ?>
+    <?php 
+   
+    if (metadata($file, 'has_derivative_image')) {
+        echo file_markup($file, array('imageSize'=>'fullsize'));
+    } else {
+        echo '<div class="item-file '. $isPDF .'"><a class="download-file" href="'. metadata($file, 'uri') .'">Download this File</a></div>';
+    } 
+        
+        
+        ?>
     <div class="itemLink" style="margin-top: 20px"><a href="/document/<?php echo metadata('file', 'item_id')?>">Go to <?php echo $itemTitle; ?></a></div>
 	
     <h2>About <?php echo $itemTitle; ?></h2>
