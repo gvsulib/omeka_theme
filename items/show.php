@@ -5,11 +5,11 @@
     <h2><?php echo metadata('item', array('Dublin Core','Title')); ?></h2>
 
     <h3><?php echo __('Files'); ?></h3>
-    <div id="item-images" class="row">
+    <div id="item-images" class="row row-gutter">
 	
          <?php echo files_for_item(array('linkAttributes' => array('target'=>'_blank'), 'imgAttributes' => array('alt' => 'Link to full-size'))); ?>
     </div>
-    <div class="cms-clear"></div>
+    <div class="cms-clear clear"></div>
 
     <!-- Items metadata -->
     <div id="item-metadata">

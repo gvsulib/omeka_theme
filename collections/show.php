@@ -6,18 +6,17 @@ $collectionTitle = strip_formatting(metadata('collection', array('Dublin Core', 
 
 <h1><?php echo $collectionTitle; ?></h1>
 
-<div id="collection-items">
-	<div style="clear: both">  	 <?php echo link_to_items_browse(__('Browse All Items in %s', $collectionTitle), array('collection' => metadata('collection', 'id'))); ?>
-    	</div>
-
+        <div class="clear"></div>
+<div class="row row-gutter" style="margin-top: 1em;">
 	<?php if (metadata('collection', 'total_items') > 0): ?>
         <?php foreach (loop('items') as $item): ?>
         <?php $itemTitle = strip_formatting(metadata('item', array('Dublin Core', 'Title'))); ?>
-        <div class="item hentry">
+        <div class="item hentry col-4 col-sm-12">
 
             <?php if (metadata('item', 'has thumbnail')): ?>
             <div class="item-img">
-                <?php echo link_to_item(item_image('square_thumbnail', array('alt' => $itemTitle))); ?>
+                  <span class="helper"></span>
+                <?php echo link_to_item(item_image('fullsize', array('alt' => $itemTitle))); ?>
             </div>
             <?php endif; ?>
             <h3><?php echo link_to_item($itemTitle, array('class'=>'permalink')); ?></h3>
@@ -37,13 +36,17 @@ $collectionTitle = strip_formatting(metadata('collection', array('Dublin Core', 
     <?php else: ?>
         <p><?php echo __("There are currently no items within this collection."); ?></p>
     <?php endif; ?>
+</div>
 
 </div><!-- end collection-items -->
-<div style="clear: both">
-<?php echo link_to_items_browse(__('Browse All Items in %s', $collectionTitle), array('collection' => metadata('collection', 'id'))); ?>
+<div class="clear"></div>
+
+    <div class="row"><div class="col-12"><hr />
+<span class="btn btn-default"><?php echo link_to_items_browse(__('Browse All Items in %s', $collectionTitle), array('collection' => metadata('collection', 'id'))); ?></span>
 
 <?php echo all_element_texts('collection'); ?>
 </div>
+
 
 <?php fire_plugin_hook('public_collections_show', array('view' => $this, 'collection' => $collection)); ?>
 

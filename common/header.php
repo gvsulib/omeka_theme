@@ -17,6 +17,7 @@
 
 </script>
 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
   <?php
   if (isset($title)) {
@@ -35,8 +36,8 @@
 
   <?php fire_plugin_hook('public_head',array('view'=>$this)); ?>
   
-  <link rel="stylesheet" type="text/css" href="https://prod.library.gvsu.edu/libs/fonts/fonts.css" />
-  <link rel="stylesheet" type="text/css" href="https://www.gvsu.edu/cms4/skeleton/0/files/css/cms4.0.min[1476194149000].css" />
+<link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=EB+Garamond|Lato:400,700">
+<link type="text/css" rel="stylesheet" href="https://gvsu.edu/cms4/skeleton/2/files/css/styles.css">
 
 <!-- Stylesheets -->
   <?php
@@ -53,57 +54,85 @@
   <?php queue_js_file('berlin'); ?>
   <?php queue_js_file('globals'); ?>
   <?php echo head_js(); ?>
+
+  <!--[if lte IE 8]>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+<![endif]-->
+<script src="https://gvsu.edu/cms4/skeleton/2/files/js/cms4.2.min.js"></script>
 </head>
 <?php echo body_tag(array('id' => @$bodyid, 'class' => @$bodyclass)); ?>
 
 <a href="#page-content" class="sr-only">Skip to main content</a>
 
-<link href="https://www.gvsu.edu/includes/topbanner/3/header.min%5B0%5D.css" rel="stylesheet" type="text/css">
  
-<div id="gvsu-cf_header" class="responsive" role="banner">
-	<div id="gvsu-cf_header-inner">
-       		<div id="gvsu-cf_header-logo">
+<div role="banner">
+  <a href="#main" class="focus-inverted">Skip to main content</a>
+  
+  
+  <div class="header">
+    <div class="row content">
+      <div class="col-5 col-sm-12 logo">
+        <div class="col-12 col-sm-9">
+          <h1>
+            <a href="/">
+              <!--[if lte IE 8|!IE]>
+                <img src="https://gvsu.edu/homepage/files/img/gvsu_logo_white.png" alt="Grand Valley State University Logo" />
+              <![endif]-->
+              <!--[if gte IE 9|!IE]><!-->
+                <img src="https://www.gvsu.edu/homepage/files/img/gvsu_logo_white.svg" alt="Grand Valley State University Logo" onerror="this.onerror=null;this.src='https://www.gvsu.edu/homepage/files/img/gvsu_logo_white.png'">
+              <!--<![endif]-->
+              <span id="gv-logo-label" class="sr-only" aria-hidden="true">Grand Valley State University</span>
+            </a>
+          </h1>
+        </div>
+        <div class="hide-lg hide-md col-sm-3">
+          <a id="gv-hamburger" role="button" tabindex="0" aria-label="Menu" aria-controls="cms-navigation-mobile">
+            <span class="icon icon-bars" aria-hidden="true"></span>
+          </a>
+        </div>
+      </div>
 
-           	<a href="https://www.gvsu.edu"><img src="https://www.gvsu.edu/includes/topbanner/3/gvsu_logo.png" alt="Grand Valley State University"></a>
-
-       		</div>
-       
-     	</div>
-</div>
 <!--Topmost navigation items-->
-<div id="cms-header-wrapper" role="header">
-<div id="cms-header">
-		<div id="cms-header-inner">
-
-		<a id="cms-navigation-toggle" href="cms-siteindex-index.htm" onclick="return cmsToggleMenu(document.getElementById('cms-navigation'))">
-   		<img src="https://www.gvsu.edu/cms4/skeleton/0/files/img/transparent.png" alt="Menu"></a>
-
-   		<h1><?php echo link_to_home_page(theme_logo()); ?></h1>
-         	<div id="cms-navigation" class="cms-navigation" role="navigation">
-             	<?php echo public_nav_main(); ?>
-         	</div>
-
-         	<div id="mobile-nav" role="navigation" aria-label="<?php echo __('Mobile Navigation'); ?>">
-             	<?php echo public_nav_main(); ?>
-         	</div>
-
-        	<div id="gvsu-cf_header-search" role="search">
-         	<!--the simple search form. --> 
-           <?php echo search_form(); ?>
-
- 
-       		</div>
-   			
-   	</div>
-   </div>
 </div>
-<!--Begin page body-->
-<a name="page-content"></a>
-	<div id="cms-body-wrapper">
-		<div id="cms-body" role="main">
-			<div id="cms-body-inner">
-				<div id="cms-body-table">
-					<div id="cms-content">
+  <div id="cms-navigation-mobile" class="navigation navigation-mobile hide-print">
+    <div class="content">
+        <div role="navigation" aria-label="<?php echo __('Mobile Navigation'); ?>">
+          <?php echo public_nav_main(); ?>
+        </div>
+      </div>
+    </div>
 
-          
-         <div class="cms-clear"></div>
+  </div>
+  <div class="site">
+    <div class="content">
+      <h1 class="h2 serif color-black padding-none margin-none">
+        <a class="color-black" href="/">Digital Collections</a>
+      </h1>
+    </div>
+  </div>
+  
+    <div id="cms-navigation" class="navigation hide-sm hide-print">
+      <div class="content">
+        <div role="navigation">
+          <?php echo public_nav_main(); ?>
+        </div>
+      </div>
+    </div>
+
+    <div class="row row-gutter">
+      <div class="col-1 col-sm-12">
+        
+      </div>
+      <div class="col-10 col-sm-12">
+        <div id="gvsu-cf_header-search" role="search">
+        <!--the simple search form. --> 
+        <?php echo search_form(); ?>
+        </div>
+      </div>
+    </div>
+</div>
+
+<!--Begin page body-->
+<div id="main" role="main">
+  <div class="content">
+    <div id="cms-content">

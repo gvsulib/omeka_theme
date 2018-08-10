@@ -18,11 +18,13 @@ echo head(array('title'=>$pageTitle,'bodyclass' => 'items browse'));
 $custNavArray = array(
         array(
             'label' =>__('Browse All'),
+            'class' => __('btn btn-default'),
             'uri' => url('items/browse'),
         ));
         
         $custNavArray[] = array(
             'label' => __('New Search'),
+            'class' => __('btn btn-default'),
             'uri' => url('items/search')
         );
 
@@ -58,11 +60,13 @@ $sortLinks[__('Creator')] = 'Dublin Core,Creator';
 
 
 <?php endif; ?>
- <div class="cms-clear"></div>
+ <div class="cms-clear clear"></div>
+
+ <div class="row row-gutter">
 
 <!--Code to display the actual items-->
 <?php foreach (loop('items') as $item): ?>
-<div class="item record">
+<div class="item record col-4 col-md-6 col-sm-12">
     
     <div class="item-meta">
     <?php if (metadata('item', 'has files')): ?>
@@ -76,7 +80,8 @@ $sortLinks[__('Creator')] = 'Dublin Core,Creator';
 
 
     <div class="item-img">
-        <?php echo link_to_item(item_image('square_thumbnail', array('alt' => $altText))); ?>
+    	<span class="helper"></span>
+        <?php echo link_to_item(item_image('fullsize', array('alt' => $altText))); ?>
     </div>
     <?php endif; ?>
 <h3><?php echo link_to_item(metadata('item', array('Dublin Core', 'Title')), array('class'=>'permalink')); ?></h3>
@@ -97,8 +102,8 @@ $sortLinks[__('Creator')] = 'Dublin Core,Creator';
     </div><!-- end class="item-meta" -->
 </div><!-- end class="item hentry" -->
 <?php endforeach; ?>
-
-<div class="cms-clear"></div>
+</div>
+<div class="cms-clear clear"></div>
 
 <?php echo pagination_links(); ?>
 <!--code that produces the links to the atom and other sorts of feeds at the bottom of the page-->

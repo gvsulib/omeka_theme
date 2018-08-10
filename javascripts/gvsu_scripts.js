@@ -142,9 +142,9 @@ jQuery(document).ready(function(){
 
 		}
 		// Add clears to fourth items in browse screens
-		var itemGrid = document.querySelectorAll('.item.record');
+		/*var itemGrid = document.querySelectorAll('.item.record');
 		var i;
 		for (i = 0; i < itemGrid.length; i=i+4) {
     		itemGrid[i].style.clear = "left";
-		}
+		}*/
     });

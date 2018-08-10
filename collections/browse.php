@@ -14,10 +14,11 @@ $sortLinks[__('Date Added')] = 'added';
 <div id="sort-links">
     <span class="sort-label"><?php echo __('Sort by: '); ?></span><?php echo browse_sort_links($sortLinks); ?>
 </div>
- <div class="cms-clear"></div>
+ <div class="cms-clear clear"></div>
+ <div class="row row-gutter">
 <?php foreach (loop('collections') as $collection): ?>
 
-<div class="collection record">
+<div class="collection record col-4 col-sm-12">
 	<!--formulate text for the alt attributes.  all images that are functonal (I.E. links) must have one for screen readers-->
    <?php if (metadata('collection', array('Dublin Core', 'Title'))) { 
 	$altText = 'Browse the ' . metadata('collection', array('Dublin Core', 'Title')) . ' collection';
@@ -26,10 +27,12 @@ $sortLinks[__('Date Added')] = 'added';
 	}
    ?>
 	 
-
-    <?php if ($collectionImage = record_image('collection', 'square_thumbnail', array('alt' => $altText))): ?>
+ <div class="item-img">
+        <span class="helper"></span>
+    <?php if ($collectionImage = record_image('collection', 'fullsize', array('alt' => $altText))): ?>
         <?php echo link_to_collection($collectionImage, array('class' => 'image')); ?>
     <?php endif; ?>
+     </div>
      <h3><?php echo link_to_collection(); ?></h3>
     <div class="collection-meta">
 
@@ -57,6 +60,7 @@ $sortLinks[__('Date Added')] = 'added';
 </div><!-- end class="collection" -->
 
 <?php endforeach; ?>
+</div>
 
 <?php echo pagination_links(); ?>
 
