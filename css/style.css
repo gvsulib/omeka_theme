@@ -61,12 +61,12 @@ button.remove_search {
 #gvsu-cf_header-search button {
     background: #0065a4;
     color: white;
-    position: absolute;
-    right: 20px;
-    top: 47px;
-    width: 50px;
-    height: 40px;
-    text-indent: -9999px;
+    //position: absolute;
+    //right: 20px;
+    //top: 47px;
+    //width: 50px;
+    //height: 40px;
+    //text-indent: -9999px;
 }
 #gvsu-cf_header-search button::after {
     font-family: "FontAwesome";

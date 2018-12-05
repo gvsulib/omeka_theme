@@ -125,13 +125,15 @@
       </div>
       <div class="col-10 col-sm-12">
         <div id="gvsu-cf_header-search" role="search">
-        <!--the simple search form. --> 
-        <?php echo search_form(); ?>
+	<!--the solr search form. -->
+           <?php $link = (isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+              if (strstr($link, "solr-search" ) === false) {
+              echo search_form();
+            } ?>
         </div>
       </div>
     </div>
 </div>
-
 <!--Begin page body-->
 <div id="main" role="main">
   <div class="content">
