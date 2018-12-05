@@ -68,7 +68,7 @@ button.remove_search {
     //height: 40px;
     //text-indent: -9999px;
 }
-#gvsu-cf_header-search button::after {
+/*#gvsu-cf_header-search button::after {
     font-family: "FontAwesome";
     content: "\f002";
     text-indent: 0;
@@ -81,7 +81,7 @@ button.remove_search {
     width: 50px;
     color: #fff;
 }
-
+*/
 #gvsu-cf_header-search{
     padding-top: 1.5em;
 }
