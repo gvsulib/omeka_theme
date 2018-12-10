@@ -235,7 +235,7 @@
 
 
 
-<script src="/omeka/themes/gvsu/javascripts/gvsu_scripts.js"></script>
+<script src="/themes/gvsu/javascripts/gvsu_scripts.js"></script>
 
 </body>
 

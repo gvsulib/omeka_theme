@@ -638,14 +638,14 @@ content: ' ';
 */
 
 @media screen and (min-width: 986px) {
-    .item.record:nth-child(3n+1) {
+    .item.record:nth-child(3n+1), .collection.record:nth-child(3n+1) {
         clear:left;
     }
 
 }
 
 @media screen and (min-width: 786px) and (max-width:985px) {
-    .item.record:nth-child(2n+1) {
+    .item.record:nth-child(2n+1), .collection.record:nth-child(2n+1) {
         clear: left;
     }
 
