@@ -4,7 +4,7 @@
     <label for="query" style="">Search all digital collections:</label>
     <?php echo $this->formText('query', $filters['query'], array('title' => __('Search'))); ?>
  <?php echo $this->formButton('submit_search', $options['submit_value'], array('type' => 'submit')); ?>
-	<P><?php echo link_to_item_search(__('Advanced Search')); ?>
+	<?php //echo link_to_item_search(__('Advanced Search')); ?>
     <div id="advanced-form">
 
 
