@@ -148,7 +148,7 @@
 						</div>
 					
 						<div class="col-3 col-md-4 col-sm-6">
-							<h2 class="padding-none color-white">
+							<!--<h2 class="padding-none color-white">
 								Hours
 							</h2>
 							
@@ -164,7 +164,7 @@
 										Friday - 8:00 a.m. - 4:30 p.m.
 											<br>
 										
-									</p>
+									</p>-->
 									
 								<br class="hide-lg">
 							
@@ -236,7 +236,6 @@
 
 
 <script src="/themes/gvsu/javascripts/gvsu_scripts.js"></script>
-
 </body>
 
 </html>

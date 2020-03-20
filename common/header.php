@@ -59,6 +59,8 @@
   <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
 <![endif]-->
 <script src="https://gvsu.edu/cms4/skeleton/2/files/js/cms4.2.min.js"></script>
+
+
 </head>
 <?php echo body_tag(array('id' => @$bodyid, 'class' => @$bodyclass)); ?>
 
@@ -130,11 +132,16 @@
               if (strstr($link, "solr-search" ) === false) {
               echo search_form();
             } ?>
+
+
+
         </div>
       </div>
     </div>
 </div>
+
 <!--Begin page body-->
 <div id="main" role="main">
   <div class="content">
     <div id="cms-content">
+<script src="https://prod.library.gvsu.edu/labs/alert/alert.js"></script>
