@@ -143,5 +143,5 @@
 <!--Begin page body-->
 <div id="main" role="main">
   <div class="content">
-    <div id="cms-content">
-<script src="https://prod.library.gvsu.edu/labs/alert/alert.js"></script>
+    <div id="cms-content"><!--
+<script src="https://prod.library.gvsu.edu/labs/alert/alert.js"></script>-->

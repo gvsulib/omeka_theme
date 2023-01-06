@@ -9,7 +9,6 @@
 
 
 
-
         <?php if (is_admin_theme()): ?>
             <p><a href="<?php echo url('settings/edit-search'); ?>"><?php echo __('Go to search settings to select record types to use.'); ?></a></p>
         <?php endif; ?>
