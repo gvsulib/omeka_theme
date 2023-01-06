@@ -9,11 +9,7 @@
 				</div>
 				<div class="col-6 text-right">
 					
-					<a href="https://prod.library.gvsu.edu/status/?problem" class="cms-report-problem" id="problem-link">report a problem with this page</a>
-					<script>
-						var thisUrl = encodeURIComponent(window.location);
-						document.getElementById('problem-link').href = 'https://prod.library.gvsu.edu/status/?problem&url=' + thisUrl;
-					</script>
+					<a href="https://www.gvsu.edu/library/support" class="cms-report-problem" id="problem-link">report a problem with this page</a>
 					
 				</div>
 			</div>
