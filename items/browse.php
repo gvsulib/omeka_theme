@@ -9,31 +9,6 @@ echo head(array('title'=>$pageTitle,'bodyclass' => 'items browse'));
 
 <h2><?php echo $pageTitle;?> <?php echo __('(%s total)', $total_results); ?></h2>
 
-<nav class="items-nav navigation secondary-nav">
-
-
-<!--Code that sets the search options on the right side of the results screen -->
-<?php
-
-$custNavArray = array(
-        array(
-            'label' =>__('Browse All'),
-            'class' => __('btn btn-default'),
-            'uri' => url('items/browse'),
-        ));
-        
-        $custNavArray[] = array(
-            'label' => __('New Search'),
-            'class' => __('btn btn-default'),
-            'uri' => url('items/search')
-        );
-
-echo public_nav_items($custNavArray); 
-
-
-?>
-</nav>
-
 <!-- Code that displays the query string and filters applied -->
 <?php echo item_search_filters(); ?>
 
