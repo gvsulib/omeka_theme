@@ -8,10 +8,12 @@
 	$collection = metadata('item', 'Collection Name');
 	$is_video = False;
 	$is_younglords = False;
-	if (str_contains($format, "mp4") or  str_contains($format, "mp3")) {
+	
+	if (strpos($format, "mp4") or strpos($format, "mp3")) {
 		$is_video = True;
 	}
-	if (str_contains($collection, "Young Lords in Lincoln Park")) {
+	
+	if ($collection == "Young Lords in Lincoln Park Collection") {
 		$is_younglords = True;
 	}
 	if ($is_younglords and $is_video) {
