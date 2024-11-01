@@ -3,7 +3,21 @@
 <?php echo head(array('title' => metadata('item', array('Dublin Core', 'Title')),'bodyclass' => 'items show')); ?>
 <div id="primary">
     <h2><?php echo metadata('item', array('Dublin Core','Title')); ?></h2>
-
+	<?php
+	$format = metadata('item', array('Dublin Core','Format'));
+	$collection = metadata('item', 'Collection Name');
+	$is_video = False;
+	$is_younglords = False;
+	if (str_contains($format, "mp4") or  str_contains($format, "mp3")) {
+		$is_video = True;
+	}
+	if (str_contains($collection, "Young Lords in Lincoln Park")) {
+		$is_younglords = True;
+	}
+	if ($is_younglords and $is_video) {
+		echo "<h3><a href='https://gvsu.co1.qualtrics.com/jfe/form/SV_eQbNl5334xJd8PA'>Please complete this brief survey to help GVSU Libraries improve our digital collections!</a></h3>";
+	}
+        ?>
     <h3><?php echo __('Files'); ?></h3>
     <div id="item-images" class="row row-gutter">
 	
