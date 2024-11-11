@@ -2,11 +2,27 @@
 
 #search-form input[type="text"] {
     padding: 3px;
-    width: 100%;
+    width: 90%;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     margin-bottom: .1em;
+}
+
+ul.pagination li, 
+.pagination li {
+    border: none !important;
+
+}
+ul.pagination li {
+    margin: 0;
+    padding: 0;
+}
+
+#filter_bar {
+    font-size: 95%;
+    background-color: #fafafa;
+    padding: 1em;
 }
 
 .advanced-button {
@@ -68,20 +84,7 @@ button.remove_search {
     //height: 40px;
     //text-indent: -9999px;
 }
-/*#gvsu-cf_header-search button::after {
-    font-family: "FontAwesome";
-    content: "\f002";
-    text-indent: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 40px;
-    line-height: 40px;
-    text-align: center;
-    width: 50px;
-    color: #fff;
-}
-*/
+
 #gvsu-cf_header-search{
     padding-top: 1.5em;
 }
@@ -475,8 +478,7 @@ nav ul.navigation {
 }
 
 .item-img {
-    height: 370px;
-    width: 370px;
+    height: 250px;
     text-align: center;
     background: #CECDCD;
     display: block;
@@ -543,9 +545,7 @@ content: ' ';
     }
     
     
-   .collection.record:nth-of-type(4n+4) {
-        clear: left;
-   }
+ 
     
 
     .collections .item.hentry {
@@ -560,6 +560,8 @@ content: ' ';
     }
     
     /* If div has video or audio, make it bigger */
+
+
     #item-images .gvsu_media
      {
         width: 49%;

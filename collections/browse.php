@@ -3,22 +3,29 @@ $pageTitle = __('Browse Collections');
 echo head(array('title'=>$pageTitle,'bodyclass' => 'collections browse'));
 ?>
 
-<h2><?php echo $pageTitle; ?> <?php echo __('(%s total)', $total_results); ?></h2>
+<h2>Browse <?php echo __('(%s total)', $total_results); ?> Collections</h2>
 
-<?php echo pagination_links(); ?>
-
-<?php
+<div id="filter_bar" class="row">
+    <?php
 $sortLinks[__('Title')] = 'Dublin Core,Title';
-$sortLinks[__('Date Added')] = 'added';
+$sortLinks[__('Most Recent')] = 'added';
 ?>
-<div id="sort-links">
-    <span class="sort-label"><?php echo __('Sort by: '); ?></span><?php echo browse_sort_links($sortLinks); ?>
+   
+    <div class="col-6" id="sort-links">
+ <span class="sort-label"><?php echo __('Sort by: '); ?></span><?php echo browse_sort_links($sortLinks); ?>
+    </div>
+    <div class="col-6" style="text-align: right;">
+        <?php echo pagination_links(); ?>
+    </div>
 </div>
+
+
+
  <div class="cms-clear clear"></div>
  <div class="row row-gutter">
 <?php foreach (loop('collections') as $collection): ?>
 
-<div class="collection record col-4 col-sm-12">
+<div class="collection record col-3 col-md-4 col-sm-6">
 	<!--formulate text for the alt attributes.  all images that are functonal (I.E. links) must have one for screen readers-->
    <?php if (metadata('collection', array('Dublin Core', 'Title'))) { 
 	$altText = 'Browse the ' . metadata('collection', array('Dublin Core', 'Title')) . ' collection';
@@ -62,8 +69,13 @@ $sortLinks[__('Date Added')] = 'added';
 <?php endforeach; ?>
 </div>
 
+<div class="row">
+    <div class="col-6">
+    </div>
+<div class="col-6" style="text-align: right;">
 <?php echo pagination_links(); ?>
-
+</div>
+</div>
 <?php fire_plugin_hook('public_collections_browse', array('collections'=>$collections, 'view' => $this)); ?>
 
 <?php echo foot(); ?>

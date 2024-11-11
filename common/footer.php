@@ -81,107 +81,22 @@
 									
 										<br>
 									
-									<p class="vcard">
-										
-												<span class="fn">Robert Beasecker, Curator of Rare Books and Distinguished Collections</span>
-												<br>
-											
-												<span class="tel">
-													<span class="value">
-														<a href="tel:616-331-8556">(616) 331-8556</a>
-													</span>
-													
-												</span>
-												<br>
-											
-												<a href="mailto:beaseckr@gvsu.edu" class="email">beaseckr@gvsu.edu</a>
-												<br>
-											
-									</p>
 									
-										<br>
-									
-									<p class="vcard">
-										
-												<span class="fn">Annie Benefiel, Archivist for Collection Management</span>
-												<br>
-											
-												<span class="tel">
-													<span class="value">
-														<a href="tel:616-331-8727">(616) 331-8727</a>
-													</span>
-													
-												</span>
-												<br>
-											
-												<a href="mailto:benefiea@gvsu.edu" class="email">benefiea@gvsu.edu</a>
-												<br>
-											
-									</p>
-									
-										<br>
-									
-									<p class="vcard">
-										
-												<span class="fn">Leigh Rupinski, Archivist for Public Services &amp; Community Engagement</span>
-												<br>
-											
-												<span class="tel">
-													<span class="value">
-														<a href="tel:616-331-8726">(616) 331-8726</a>
-													</span>
-													
-												</span>
-												<br>
-											
-												<a href="mailto:rupinskl@gvsu.edu" class="email">rupinskl@gvsu.edu</a>
-												<br>
-											
-									</p>
 									
 								<br class="hide-lg hide-md">
 							
 						</div>
 					
 						<div class="col-3 col-md-4 col-sm-6">
-							<!--<h2 class="padding-none color-white">
-								Hours
-							</h2>
-							
-									<p>
-										Monday - 8:00 a.m. - 4:30 p.m.
-											<br>
-										Tuesday - 8:00 a.m. - 4:30 p.m.
-											<br>
-										Wednesday - 8:00 a.m. - 4:30 p.m.
-											<br>
-										Thursday - 8:00 a.m. - 4:30 p.m.
-											<br>
-										Friday - 8:00 a.m. - 4:30 p.m.
-											<br>
-										
-									</p>-->
-									
-								<br class="hide-lg">
+							<p>Monday - Friday, 8:30 a.m. - 4:30 p.m.</p>
+
 							
 						</div>
 					
 						<div class="col-3 col-md-4 col-sm-6">
-							<h2 class="padding-none color-white">
-								Social Media
-							</h2>
 							
 									<p>
-										
-											<a href="https://www.facebook.com/gvsuarchives/" title="Facebook" class="text-nodecoration" target="_blank">
-												<span class="icon-stack icon-lg">
-													<span class="icon icon-square-o icon-stack-2x"></span>
-													<span class="icon icon-facebook icon-stack-1x"></span>
-												</span>
-												<span class="sr-only">https://www.facebook.com/gvsuarchives/</span>
-											</a>
-										
-											<a href="https://gvsuspecialcollections.wordpress.com/" title="Blog" class="text-nodecoration" target="_blank">
+										<a href="https://gvsuspecialcollections.wordpress.com/" title="Blog" class="text-nodecoration">
 												<span class="icon-stack icon-lg">
 													<span class="icon icon-square-o icon-stack-2x"></span>
 													<span class="icon icon-rss icon-stack-1x"></span>
@@ -189,7 +104,17 @@
 												<span class="sr-only">https://gvsuspecialcollections.wordpress.com/</span>
 											</a>
 										
-											<a href="https://www.instagram.com/gvsuarchives/" title="Instagram" class="text-nodecoration" target="_blank">
+											<a href="https://www.facebook.com/gvsuarchives/" title="Facebook" class="text-nodecoration">
+												<span class="icon-stack icon-lg">
+													<span class="icon icon-square-o icon-stack-2x"></span>
+													<span class="icon icon-facebook icon-stack-1x"></span>
+												</span>
+												<span class="sr-only">https://www.facebook.com/gvsuarchives/</span>
+											</a>
+										
+											
+										
+											<a href="https://www.instagram.com/gvsuarchives/" title="Instagram" class="text-nodecoration">
 												<span class="icon-stack icon-lg">
 													<span class="icon icon-square-o icon-stack-2x"></span>
 													<span class="icon icon-instagram icon-stack-1x"></span>
@@ -214,13 +139,17 @@
 							<a href="https://www.gvsu.edu/affirmativeactionstatement.htm"><span class="hide-sm hide-md">GVSU is an </span>AA/EO Institution</a>
 						</li>
 						<li>
-							<a href="https://www.gvsu.edu//privacystatement.htm">Privacy Policy</a>
+							<a href="https://www.gvsu.edu/privacystatement.htm">Privacy Policy</a>
 						</li>
 						<li>
-							<a href="https://www.gvsu.edu//disclosures">Disclosures</a>
+							<a href="https://www.gvsu.edu/financialaid/heerf">HEERF Funding</a>
+						</li>
+
+						<li>
+							<a href="https://www.gvsu.edu/disclosures">Disclosures</a>
 						</li>
 						<li>
-							<span class="hide-sm hide-md">Copyright </span>© 2018 GVSU
+							<span class="hide-sm hide-md">Copyright </span>© 2024 GVSU
 						</li>
 					</ul>
 				</div>
