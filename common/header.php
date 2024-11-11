@@ -62,11 +62,8 @@
 
 
 </head>
-<?php echo body_tag(array('id' => @$bodyid, 'class' => @$bodyclass)); ?>
+ <?php echo body_tag(array('id' => @$bodyid, 'class' => @$bodyclass)); ?>
 
-<a href="#page-content" class="sr-only">Skip to main content</a>
-
- 
 <div role="banner">
   <a href="#main" class="focus-inverted">Skip to main content</a>
   
@@ -78,68 +75,189 @@
           <h1>
             <a href="/">
               <!--[if lte IE 8|!IE]>
-                <img src="https://gvsu.edu/homepage/files/img/gvsu_logo_white.png" alt="Grand Valley State University Logo" />
+                <img src="/cms4/skeleton/2/files/img/gvsu_logo_white[0].png" alt="Grand Valley State University Logo" width="600" height="53" />
               <![endif]-->
               <!--[if gte IE 9|!IE]><!-->
-                <img src="https://www.gvsu.edu/homepage/files/img/gvsu_logo_white.svg" alt="Grand Valley State University Logo" onerror="this.onerror=null;this.src='https://www.gvsu.edu/homepage/files/img/gvsu_logo_white.png'">
+                <img src="https://www.gvsu.edu/cms4/skeleton/2/files/img/gvsu_logo_white[0].svg" alt="Grand Valley State University Logo" onerror="this.onerror=null;this.src='https://www.gvsu.edu/cms4/skeleton/2/files/img/gvsu_logo_white.png'" width="600" height="53">
               <!--<![endif]-->
               <span id="gv-logo-label" class="sr-only" aria-hidden="true">Grand Valley State University</span>
             </a>
           </h1>
         </div>
-        <div class="hide-lg hide-md col-sm-3">
-          <a id="gv-hamburger" role="button" tabindex="0" aria-label="Menu" aria-controls="cms-navigation-mobile">
-            <span class="icon icon-bars" aria-hidden="true"></span>
-          </a>
-        </div>
+        
+          <div class="hide-lg hide-md col-sm-3">
+            <a id="gv-hamburger" role="button" tabindex="0" aria-label="Menu" aria-controls="cms-navigation-mobile">
+              <span class="icon icon-bars" aria-hidden="true"></span>
+            </a>
+          </div>
+        
       </div>
-
-<!--Topmost navigation items-->
-</div>
-  <div id="cms-navigation-mobile" class="navigation navigation-mobile hide-print">
-    <div class="content">
-        <div role="navigation" aria-label="<?php echo __('Mobile Navigation'); ?>">
-          <?php echo public_nav_main(); ?>
-        </div>
+      <div class="col-7 col-sm-12 quick hide-print" style="">
       </div>
     </div>
-
-  </div>
+  <div id="cms-navigation-mobile" class="navigation navigation-mobile hide-print"><div class="content">
+        <div role="navigation" aria-label="Mobile Navigation">
+  <ul>
+    
+          <li class="navigation-sub">
+            <a href="https://www.gvsu.edu/library/specialcollections/cms-siteindex-index.htm#0F864938-0BC5-7D2D-5FF164D4329FAC1B" target="_self" aria-label="Collections sub navigation" aria-expanded="false" aria-haspopup="true" aria-controls="cms-navigation-mobile-sub-1" id="cms-navigation-mobile-label-1">
+              Collections
+              <span class="icon icon-caret-down" aria-hidden="true"></span>
+            </a>
+            <ul id="cms-navigation-mobile-sub-1">
+              
+                  <li>
+                    <a href="https://www.gvsu.edu/library/specialcollections/search-our-collections-103.htm" target="_self" id="cms-navigation-mobile-label-1-1" aria-labelledby="cms-navigation-mobile-label-1 cms-navigation-mobile-label-1-1">
+                      Search the Collections
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="https://www.gvsu.edu/library/specialcollections/rare-books-44.htm" target="_self" id="cms-navigation-mobile-label-1-2" aria-labelledby="cms-navigation-mobile-label-1 cms-navigation-mobile-label-1-2">
+                      Rare Books
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="https://www.gvsu.edu/library/specialcollections/special-collections-3.htm" target="_self" id="cms-navigation-mobile-label-1-3" aria-labelledby="cms-navigation-mobile-label-1 cms-navigation-mobile-label-1-3">
+                      Special Collections
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="https://www.gvsu.edu/library/specialcollections/university-archives-26.htm" target="_self" id="cms-navigation-mobile-label-1-4" aria-labelledby="cms-navigation-mobile-label-1 cms-navigation-mobile-label-1-4">
+                      University Archives
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="https://digitalcollections.library.gvsu.edu/" target="_self" id="cms-navigation-mobile-label-1-5" aria-labelledby="cms-navigation-mobile-label-1 cms-navigation-mobile-label-1-5">
+                      Digital Collections
+                    </a>
+                  </li>
+                
+            </ul>
+          </li>
+        
+          <li class="navigation-sub">
+            <a href="https://www.gvsu.edu/library/specialcollections/cms-siteindex-index.htm#290D8758-F18E-662F-23679AE14EEC2E5F" target="_self" aria-label="Research sub navigation" aria-expanded="false" aria-haspopup="true" aria-controls="cms-navigation-mobile-sub-2" id="cms-navigation-mobile-label-2">
+              Research
+              <span class="icon icon-caret-down" aria-hidden="true"></span>
+            </a>
+            <ul id="cms-navigation-mobile-sub-2">
+              
+                  <li>
+                    <a href="https://www.gvsu.edu/library/specialcollections/research-support-105.htm" target="_self" id="cms-navigation-mobile-label-2-1" aria-labelledby="cms-navigation-mobile-label-2 cms-navigation-mobile-label-2-1">
+                      Research Guide
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="https://www.gvsu.edu/library/specialcollections/policies-102.htm" target="_self" id="cms-navigation-mobile-label-2-2" aria-labelledby="cms-navigation-mobile-label-2 cms-navigation-mobile-label-2-2">
+                      Policies
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="https://www.gvsu.edu/library/specialcollections/visiting-48.htm" target="_self" id="cms-navigation-mobile-label-2-3" aria-labelledby="cms-navigation-mobile-label-2 cms-navigation-mobile-label-2-3">
+                      Plan a Visit
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="https://www.gvsu.edu/library/specialcollections/citations-and-copyright-46.htm" target="_self" id="cms-navigation-mobile-label-2-4" aria-labelledby="cms-navigation-mobile-label-2 cms-navigation-mobile-label-2-4">
+                      Citations and Copyright
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="https://www.gvsu.edu/library/specialcollections/copies-and-scans-54.htm" target="_self" id="cms-navigation-mobile-label-2-5" aria-labelledby="cms-navigation-mobile-label-2 cms-navigation-mobile-label-2-5">
+                      Copies and Scans
+                    </a>
+                  </li>
+                
+            </ul>
+          </li>
+        
+          <li>
+            <a href="https://www.gvsu.edu/library/specialcollections/instruction-47.htm" target="_self">
+              Instruction
+            </a>
+          </li>
+        
+          <li class="navigation-sub">
+            <a href="https://www.gvsu.edu/library/specialcollections/cms-siteindex-index.htm#DD1AC402-9B2C-EB58-F2C7515112CFF925" target="_self" aria-label="Services sub navigation" aria-expanded="false" aria-haspopup="true" aria-controls="cms-navigation-mobile-sub-3" id="cms-navigation-mobile-label-3">
+              Services
+              <span class="icon icon-caret-down" aria-hidden="true"></span>
+            </a>
+            <ul id="cms-navigation-mobile-sub-3">
+              
+                  <li>
+                    <a href="https://www.gvsu.edu/library/specialcollections/university-records-consultations-49.htm" target="_self" id="cms-navigation-mobile-label-3-1" aria-labelledby="cms-navigation-mobile-label-3 cms-navigation-mobile-label-3-1">
+                      University Records Consultations
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="https://www.gvsu.edu/library/specialcollections/digital-projects-63.htm" target="_self" id="cms-navigation-mobile-label-3-2" aria-labelledby="cms-navigation-mobile-label-3 cms-navigation-mobile-label-3-2">
+                      Digital Project Partnerships
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="https://www.gvsu.edu/library/specialcollections/student-jobs-94.htm" target="_self" id="cms-navigation-mobile-label-3-3" aria-labelledby="cms-navigation-mobile-label-3 cms-navigation-mobile-label-3-3">
+                      Student Jobs
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="https://www.gvsu.edu/library/specialcollections/donations-115.htm" target="_self" id="cms-navigation-mobile-label-3-4" aria-labelledby="cms-navigation-mobile-label-3 cms-navigation-mobile-label-3-4">
+                      Donations
+                    </a>
+                  </li>
+                
+            </ul>
+          </li>
+        
+          <li>
+            <a href="https://gvsuspecialcollections.wordpress.com/" target="_self">
+              Exhibits
+            </a>
+          </li>
+        
+          <li>
+            <a href="https://www.gvsu.edu/library/specialcollections/about-us-109.htm" target="_self">
+              About Us
+            </a>
+          </li>
+        
+  </ul>
+</div>
+      </div></div></div>
   <div class="site">
     <div class="content">
       <h1 class="h2 serif color-black padding-none margin-none">
-        <a class="color-black" href="/">Digital Collections</a>
+        <a href="https://www.gvsu.edu/library/specialcollections" class="color-black">
+          Special Collections &amp; University Archives
+        </a>
       </h1>
     </div>
   </div>
   
-    <div id="cms-navigation" class="navigation hide-sm hide-print">
-      <div class="content">
-        <div role="navigation">
-          <?php echo public_nav_main(); ?>
-        </div>
-      </div>
+  <div class="row">
+    <div class="col-4 col-md-6 col-sm-12">
+        <h1 class="h3"><a href="https://digitalcollections.library.gvsu.edu">Digital Collections</a></h1>
     </div>
-
-    <div class="row row-gutter">
-      <div class="col-1 col-sm-12">
-        
-      </div>
-      <div class="col-10 col-sm-12">
-        <div id="gvsu-cf_header-search" role="search">
-	<!--the solr search form. -->
-           <?php $link = (isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+    <div class="col-4 col-md-6 col-sm-12">
+        <?php echo public_nav_main(); ?>
+    </div>
+    <div class="col-4 col-md-12 col-sm-12">
+       <?php $link = (isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
               if (strstr($link, "solr-search" ) === false) {
               echo search_form();
             } ?>
-
-
-
-        </div>
-      </div>
     </div>
-</div>
-
+ </div>
 <!--Begin page body-->
 <div id="main" role="main">
   <div class="content">

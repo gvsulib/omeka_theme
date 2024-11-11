@@ -32,10 +32,7 @@
 									<p class="vcard">
 										<span class="adr">
 											
-													<span class="fn">Special Collections and</span>
-													<br>
-												
-													<span class="fn">University Archives</span>
+													<span class="fn">Lemmen Library and Archives</span>
 													<br>
 												
 													<span class="street-address">Seidman House</span>
