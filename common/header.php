@@ -243,21 +243,26 @@
       </h1>
     </div>
   </div>
-  
-  <div class="row">
-    <div class="col-4 col-md-6 col-sm-12">
-        <h1 class="h3"><a href="https://digitalcollections.library.gvsu.edu">Digital Collections</a></h1>
-    </div>
-    <div class="col-4 col-md-6 col-sm-12">
-        <?php echo public_nav_main(); ?>
-    </div>
-    <div class="col-4 col-md-12 col-sm-12">
-       <?php $link = (isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+  <div class="wrapper-full-width wrapper-background">
+  <div style="background-color: #002855;">
+    <div class="content" style="padding: 0 !important;">
+        <div class="row-gutter">    
+          <div class="col-4 col-md-6 col-sm-12">
+            <h1 class="h3"><a href="https://digitalcollections.library.gvsu.edu">Digital Collections</a></h1>
+          </div>
+          <div class="col-4 col-md-6 col-sm-12">
+           <?php echo public_nav_main(); ?>
+        </div>
+          <div class="col-4 col-md-12 col-sm-12">
+           <?php $link = (isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
               if (strstr($link, "solr-search" ) === false) {
               echo search_form();
             } ?>
+          </div>
+        </div>
+      </div>
     </div>
- </div>
+  </div>
 <!--Begin page body-->
 <div id="main" role="main">
     <div id="cms-content"><!--
