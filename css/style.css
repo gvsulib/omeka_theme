@@ -531,6 +531,7 @@ content: ' ';
 #title_bar {
         background-color: #002855;
     }
+
 @media screen and (min-width:768px) {
     .item.hentry {
     height: 40em;
@@ -675,6 +676,7 @@ content: ' ';
 }
 
 @media screen and (max-width:785px) {
+
     .item.record:nth-child(2n+1), 
     .collection.record:nth-child(2n+1) {
         clear: left;
