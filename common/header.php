@@ -250,7 +250,7 @@
     <div class="content" style="padding: 0 !important;">
         <div class="row-gutter">    
           <div class="col-4 col-md-6 col-sm-12">
-            <h1 class="h3"><a href="https://digitalcollections.library.gvsu.edu">Digital Collections</a></h1>
+            <h1 class="h3 dc_title"><a href="https://digitalcollections.library.gvsu.edu">Digital Collections</a></h1>
           </div>
           <div class="col-4 col-md-6 col-sm-12">
            <?php echo public_nav_main(); ?>
