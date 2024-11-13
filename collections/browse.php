@@ -32,6 +32,8 @@ $sortLinks[__('Most Recent')] = 'added';
 
 
  <div class="cms-clear clear"></div>
+ <div class="wrapper">
+    <div class="content">
  <div class="row-gutter">
 <?php foreach (loop('collections') as $collection): ?>
 
@@ -78,7 +80,8 @@ $sortLinks[__('Most Recent')] = 'added';
 
 <?php endforeach; ?>
 </div>
-
+</div>
+</div>
 <div class="row">
     <div class="col-9">
     </div>
