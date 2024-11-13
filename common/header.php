@@ -247,7 +247,7 @@
   </div>
   <div class="wrapper-full-width wrapper-background">
   <div style="background-color: #002855;">
-    <div class="content" style="padding: 3em 0 3em 0 !important;">
+    <div class="content" style="padding: 0 3em 0 3em !important;">
         <div class="row-gutter">    
           <div class="col-4 col-md-6 col-sm-12">
             <h1 class="h3 dc_title"><a href="https://digitalcollections.library.gvsu.edu">Digital Collections</a></h1>
