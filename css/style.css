@@ -22,7 +22,8 @@ ul.pagination li {
 #filter_bar {
     font-size: 95%;
     background-color: #fafafa;
-    padding: 1em;
+    padding: .25em .5em;
+    margin-bottom: 1.5em;
 }
 
 .advanced-button {

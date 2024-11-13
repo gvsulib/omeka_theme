@@ -5,18 +5,24 @@ echo head(array('title'=>$pageTitle,'bodyclass' => 'collections browse'));
 
 <h2>Browse <?php echo __('(%s total)', $total_results); ?> Collections</h2>
 
-<div id="filter_bar" class="row">
+<div id="filter_bar" class="wrapper-full-width wrapper-background wrapper-light">
     <?php
 $sortLinks[__('Title')] = 'Dublin Core,Title';
 $sortLinks[__('Most Recent')] = 'added';
 ?>
-   
-    <div class="col-6" id="sort-links">
- <span class="sort-label"><?php echo __('Sort by: '); ?></span><?php echo browse_sort_links($sortLinks); ?>
+   <div style="background-color: #F7F7F7;">
+    <div class="content">
+        <div class="row-gutter">    
+            <div class="col-3" id="sort-links">
+                <span class="sort-label"><?php echo __('Sort by: '); ?></span><?php echo browse_sort_links($sortLinks); ?>
+             </div>
+             <div class="col-6"></div>
+            <div class="col-3">
+             <?php echo pagination_links(); ?>
+            </div>
+        </div>
     </div>
-    <div class="col-6" style="text-align: right;">
-        <?php echo pagination_links(); ?>
-    </div>
+</div>
 </div>
 
 
