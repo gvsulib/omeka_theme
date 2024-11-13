@@ -235,13 +235,15 @@
 </div>
       </div></div></div>
   <div class="site">
-    <div class="content">
+    <div class="row content">
+      <div class="col-12">
       <h1 class="h2 serif color-black padding-none margin-none">
         <a href="https://www.gvsu.edu/library/specialcollections" class="color-black">
           Special Collections &amp; University Archives
         </a>
       </h1>
     </div>
+  </div>
   </div>
   <div class="wrapper-full-width wrapper-background">
   <div style="background-color: #002855;">
