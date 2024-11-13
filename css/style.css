@@ -675,7 +675,8 @@ content: ' ';
 }
 
 @media screen and (max-width:785px) {
-    .item.record:nth-child(2n+1), .collection.record:nth-child(2n+1) {
+    .item.record:nth-child(2n+1), 
+    .collection.record:nth-child(2n+1) {
         clear: left;
     }
     #filter_bar {
