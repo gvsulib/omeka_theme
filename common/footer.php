@@ -1,7 +1,7 @@
-<div class="hide-print">
+<div class="hide-print wrapper">
 				<br>
 				<hr>
-				
+			<div class="content" style="padding: 0 3em 0 3em;">
 			<div class="row">
 				<div class="col-6">
 					
@@ -9,10 +9,11 @@
 				</div>
 				<div class="col-6 text-right">
 					
-					<a href="https://www.gvsu.edu/library/support" class="cms-report-problem" id="problem-link">report a problem with this page</a>
+					<a href="https://www.gvsu.edu/library/support" class="cms-report-problem" id="problem-link">Report a problem with this page</a>
 					
 				</div>
 			</div>
+		</div>
 </div>
 
 </div>

@@ -323,7 +323,7 @@ ul.pagination {
     text-align: right;
 }
 
-ul.pagination li {
+#filter_bar ul.pagination li {
     background: #fafafa;
 }
 
