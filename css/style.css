@@ -23,8 +23,7 @@ ul.pagination li {
     font-size: 95%;
     background-color: #fafafa;
     padding: .25em .5em;
-    margin-bottom: 1.5em;
-}
+    margin-bottom: 1.5em}
 
 .advanced-button {
     text-decoration: none;
@@ -213,7 +212,6 @@ address {
 
 
 #sort-links {
-    float: right;
     list-style-type: none;
     padding: 0;
     display: block;
@@ -284,14 +282,11 @@ nav.pagination-nav {
 }
 
 .pagination {
-    float: left;
     padding-left: 0;
     margin: 0 0 1.5em 0;
 }
 .pagination li {
-    height: 3em;
-    border: solid #e7e7e7;
-    border-width: 1px 0 1px 1px;
+
     float: left;
     list-style-type: none;
 }
@@ -312,7 +307,10 @@ nav.pagination-nav {
     border-right: 1px solid #e7e7e7;
 }
 
-
+ul.pagination {
+    width: auto;
+    text-align: right;
+}
 
 #outputs {
         font-size: .9em;
@@ -322,7 +320,8 @@ nav.pagination-nav {
         border-top: 1px solid #bbb;
     }
 
-ul.navigation {
+ul.navigation,
+ul.pagination li {
     border: none !important;
 }
 
