@@ -2,11 +2,13 @@
 $pageTitle = __('Browse Collections');
 echo head(array('title'=>$pageTitle,'bodyclass' => 'collections browse'));
 ?>
-
+<div class="wrapper">
+     <div class="content" style="padding: 0 3em 0 3em;">
 <div class="row">
-    <div class="content" style="padding: 0 3em 0 3em;">
+   
         <h2>Browse <?php echo __('(%s total)', $total_results); ?> Collections</h2>
     </div>
+</div>
 </div>
 
 <div id="filter_bar" class="wrapper-full-width wrapper-background wrapper-light">
@@ -82,11 +84,15 @@ $sortLinks[__('Most Recent')] = 'added';
 </div>
 </div>
 </div>
-<div class="row">
+<div class="wrapper">
+    <div class="content">
+<div class="row-gutter">
     <div class="col-9">
     </div>
 <div class="col-3" style="text-align: right;">
 <?php echo pagination_links(); ?>
+</div>
+</div>
 </div>
 </div>
 <?php fire_plugin_hook('public_collections_browse', array('collections'=>$collections, 'view' => $this)); ?>
