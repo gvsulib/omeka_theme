@@ -287,7 +287,6 @@ nav.pagination-nav {
 }
 .pagination li {
 
-    float: left;
     list-style-type: none;
 }
 .pagination a, .pagination form {
@@ -310,6 +309,10 @@ nav.pagination-nav {
 ul.pagination {
     width: auto;
     text-align: right;
+}
+
+ul.pagination li {
+    background: #fafafa;
 }
 
 #outputs {
