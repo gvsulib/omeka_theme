@@ -33,7 +33,6 @@ $sortLinks[__('Most Recent')] = 'added';
 
  <div class="cms-clear clear"></div>
  <div class="row-gutter">
-    <div class="content">
 <?php foreach (loop('collections') as $collection): ?>
 
 <div class="collection record col-3 col-md-4 col-sm-6">
@@ -79,14 +78,12 @@ $sortLinks[__('Most Recent')] = 'added';
 
 <?php endforeach; ?>
 </div>
-</div>
+
 <div class="row">
-    <div class="content" style="padding: 0 3em 0 3em;">
     <div class="col-9">
     </div>
 <div class="col-3" style="text-align: right;">
 <?php echo pagination_links(); ?>
-</div>
 </div>
 </div>
 <?php fire_plugin_hook('public_collections_browse', array('collections'=>$collections, 'view' => $this)); ?>
