@@ -246,16 +246,16 @@
   </div>
   </div>
   <div class="wrapper-full-width wrapper-background">
-  <div style="background-color: #002855;">
+  <div id="header_bar">
     <div class="content" style="padding: 0 3em 0 3em !important;">
         <div class="row-gutter">    
-          <div class="col-4 col-md-6 col-sm-12">
+          <div class="col-4 col-md-6 col-sm-12" id="title_bar">
             <h1 class="h3 dc_title"><a href="https://digitalcollections.library.gvsu.edu">Digital Collections</a></h1>
           </div>
-          <div class="col-4 col-md-6 col-sm-12">
+          <div class="col-4 col-md-6 col-sm-12" id="dc_nav_bar">
            <?php echo public_nav_main(); ?>
         </div>
-          <div class="col-4 col-md-12 col-sm-12">
+          <div class="col-4 col-md-12 col-sm-12" id="search_bar">
            <?php $link = (isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
               if (strstr($link, "solr-search" ) === false) {
               echo search_form();

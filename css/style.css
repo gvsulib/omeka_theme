@@ -527,6 +527,10 @@ content: ' ';
   max-height: 100%;
   width: auto !important;
 }
+
+#title_bar {
+        background-color: #002855;
+    }
 @media screen and (min-width:768px) {
     .item.hentry {
     height: 40em;
@@ -658,12 +662,38 @@ content: ' ';
     .item.record:nth-child(4n+1), .collection.record:nth-child(4n+1) {
         clear:left;
     }
-
+    #header_bar {
+        background-color: #002855;
+    }
 }
 
 @media screen and (min-width: 786px) and (max-width:985px) {
     .item.record:nth-child(3n+1), .collection.record:nth-child(3n+1) {
         clear: left;
+    }
+
+}
+
+@media screen and (max-width:785px) {
+    .item.record:nth-child(2n+1), .collection.record:nth-child(2n+1) {
+        clear: left;
+    }
+    #filter_bar {
+        display: none;
+    }
+
+    #search_bar {
+
+    margin-left: -4.5em;
+    margin-right: -4.5em;
+    padding: 0;
+    width: 120%;
+
+    }
+
+    #dc_nav_bar {
+        background-color: #fafafa;
+        border-bottom: 1px solid #666;
     }
 
 }
