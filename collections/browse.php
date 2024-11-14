@@ -6,7 +6,7 @@ echo head(array('title'=>$pageTitle,'bodyclass' => 'collections browse'));
      <div class="content" style="padding: 0 3em 0 3em;">
 <div class="row">
    
-        <h2>Browse <?php echo __('(%s total)', $total_results); ?> Collections</h2>
+        <h2>Browse All <?php echo __('%s', $total_results); ?> Collections</h2>
     </div>
 </div>
 </div>
