@@ -245,7 +245,7 @@
     </div>
   </div>
   </div>
-  <div class="wrapper-full-width wrapper-background">
+  <div id="header_wrapper" class="wrapper-full-width wrapper-background">
   <div id="header_bar">
     <div class="content" style="padding: 0 3em 0 3em !important;">
         <div class="row-gutter">    
