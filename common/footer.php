@@ -3,11 +3,11 @@
 				<hr>
 			<div class="content" style="padding: 0 3em 0 3em;">
 			<div class="row">
-				<div class="col-6">
+				<div class="col-6 col-sm-12">
 					
 						
 				</div>
-				<div class="col-6 text-right">
+				<div class="col-6 col-sm-12 text-right">
 					
 					<a href="https://www.gvsu.edu/library/support" class="cms-report-problem" id="problem-link">Report a problem with this page</a>
 					
@@ -147,7 +147,7 @@
 							<a href="https://www.gvsu.edu/disclosures">Disclosures</a>
 						</li>
 						<li>
-							<span class="hide-sm hide-md">Copyright </span>© 2024 GVSU
+							<span class="hide-sm hide-md">Copyright </span>© <span id="current_year">2025</span> GVSU
 						</li>
 					</ul>
 				</div>
@@ -159,6 +159,20 @@
 
 
 <script src="/themes/gvsu/javascripts/gvsu_scripts.js"></script>
+ <script> 
+    function geeks() { 
+        
+        // Creating Date Object  
+        var dateobj = new Date(); 
+        
+        // Year from above object  
+        // is being fetched using getFullYear()  
+        var dateObject = dateobj.getFullYear(); 
+        
+        // Printing current year  
+        document.getElementById("current_year").innerHTML = dateObject; 
+    } 
+    </script> 
 </body>
 
 </html>

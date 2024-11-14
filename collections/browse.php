@@ -87,9 +87,9 @@ $sortLinks[__('Most Recent')] = 'added';
 <div class="wrapper">
     <div class="content">
 <div class="row-gutter">
-    <div class="col-9">
+    <div class="col-9 col-md-6">
     </div>
-<div class="col-3" style="text-align: right;">
+<div class="col-3 col-md-6" style="text-align: right;">
 <?php echo pagination_links(); ?>
 </div>
 </div>
