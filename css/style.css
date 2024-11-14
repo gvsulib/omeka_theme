@@ -673,7 +673,10 @@ content: ' ';
     .item.record:nth-child(3n+1), .collection.record:nth-child(3n+1) {
         clear: left;
     }
-
+    #header_wrapper {     
+        background-color: #002855;
+    height: 3.85em;
+ }
 }
 
 @media screen and (min-width: 1px) and (max-width:785px) {
