@@ -572,6 +572,10 @@ overflow:hidden;
     color: ##0039c5;
 }
 
+#header_bar {
+    background-color: #002855;
+}
+
 @media screen and (min-width:768px) {
     .item.hentry {
     height: 40em;
