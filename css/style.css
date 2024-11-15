@@ -582,7 +582,7 @@ form#search-form {
 }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1001px) {
 #dc_nav_bar ul.navigation li {
     margin-right: .6em;
     font-size: 1em;
