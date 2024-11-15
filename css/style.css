@@ -2,7 +2,7 @@
 
 #search-form input[type="text"] {
     padding: 3px;
-    width: 80%;
+    width: 75%;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -42,7 +42,7 @@ ul.pagination li {
 }
 
 #search-form button {
-    heifght: 40px;
+    height: 40px;
     float: right;
 }
 
@@ -533,7 +533,7 @@ content: ' ';
     }
 
 #dc_nav_bar ul.navigation {
-    margin-top: 1.2em;
+    margin-top: 1em;
 
 }
 #dc_nav_bar ul.navigation li {
@@ -562,6 +562,9 @@ overflow:hidden;
 
 form#search-form {
     margin-top: .5em;
+}
+form#search-form button {
+    margin-top: .11em;
 }
 }
 
