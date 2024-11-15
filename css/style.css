@@ -534,6 +534,7 @@ content: ' ';
 
 #dc_nav_bar ul.navigation {
     margin-top: 1em;
+    margin-left: 0;
 
 }
   #dc_nav_bar ul.navigation li {
@@ -772,6 +773,10 @@ form#search-form {
         background-color: #fafafa;
         border-bottom: 1px solid #666;
     }
+
+     #dc_nav_bar h1 {
+        margin-left: -1.7em;
+     }
 
     .h2.serif { font-size: 1.5em; }
     #header_wrapper {     
