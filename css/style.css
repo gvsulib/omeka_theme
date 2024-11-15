@@ -739,7 +739,7 @@ form#search-form {
     }
 }
 
-@media screen and (min-width: 786px) and (max-width:985px) {
+@media screen and (min-width: 800px) and (max-width:985px) {
     .item.record:nth-child(3n+1), .collection.record:nth-child(3n+1) {
         clear: left;
     }
@@ -749,7 +749,7 @@ form#search-form {
  }
 }
 
-@media screen and (min-width: 1px) and (max-width:785px) {
+@media screen and (min-width: 1px) and (max-width:800px) {
 
     .item.record:nth-child(2n+1), 
     .collection.record:nth-child(2n+1) {
