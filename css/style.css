@@ -530,6 +530,7 @@ content: ' ';
 
 #title_bar {
         background-color: #002855;
+        margin-left: -1.4em;
     }
 
 #dc_nav_bar ul.navigation {
@@ -593,6 +594,9 @@ form#search-form {
     width: 73%;
     margin-bottom: .1em;
 }
+#title_bar {
+    margin-left: auto;
+}
 }
 
 @media screen and (max-width: 801px) {
@@ -603,9 +607,10 @@ form#search-form {
     display: none;
   }
   #dc_nav_bar {
-        height: 4em;
+    height: 4em;
     width: 111.5%;
     margin-left: -2.5em;
+    padding-left: 1.4em;
   }
 
 }
