@@ -6,8 +6,9 @@ $collectionTitle = strip_formatting(metadata('collection', array('Dublin Core', 
 
 <h1><?php echo $collectionTitle; ?></h1>
 
-        <div class="clear"></div>
-<div class="row row-gutter" style="margin-top: 1em;">
+ <div class="wrapper">
+    <div class="content">
+<div class="row-gutter" style="margin-top: 1em;">
 	<?php if (metadata('collection', 'total_items') > 0): ?>
         <?php foreach (loop('items') as $item): ?>
         <?php $itemTitle = strip_formatting(metadata('item', array('Dublin Core', 'Title'))); ?>
@@ -37,7 +38,7 @@ $collectionTitle = strip_formatting(metadata('collection', array('Dublin Core', 
         <p><?php echo __("There are currently no items within this collection."); ?></p>
     <?php endif; ?>
 </div>
-
+</div></div>
 </div><!-- end collection-items -->
 <div class="clear"></div>
 
