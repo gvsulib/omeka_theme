@@ -563,6 +563,10 @@ overflow:hidden;
     margin-bottom: .1em;
 }
 
+.btn-primary a {
+    color: #fff;
+}
+
 @media screen and (min-width:768px) {
     .item.hentry {
     height: 40em;
