@@ -538,15 +538,32 @@ content: ' ';
 }
 #dc_nav_bar ul.navigation li {
     margin-right: 1em;
+    font-size: 1.15em;
 }
 #dc_nav_bar ul.navigation li a {
     color: #fff;
 }
+form#search-form label {
+position:absolute;
+left:-10000px;
+top:auto;
+width:1px;
+height:1px;
+overflow:hidden;
+}
+
+
 
 @media screen and (min-width:768px) {
     .item.hentry {
     height: 40em;
     overflow: hidden;
+}
+#dc_nav_bar ul.navigation li {
+font-size: 1em;
+}
+form#search-form {
+    margin-top: .5em;
 }
 }
 
