@@ -621,9 +621,7 @@ form#search-form {
     #dc_nav_bar ul.navigation li a {
     color: #fff;
 }
-#search-form input[type="text"] {
-    width: 89%;
-}
+
 }
 
 @media screen and (min-width: 600px) {
