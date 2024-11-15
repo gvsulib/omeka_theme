@@ -532,6 +532,17 @@ content: ' ';
         background-color: #002855;
     }
 
+#dc_nav_bar ul.navigation {
+    margin-top: 1.2em;
+
+}
+#dc_nav_bar ul.navigation li {
+    margin-right: 1em;
+}
+#dc_nav_bar ul.navigation li a {
+    color: #fff;
+}
+
 @media screen and (min-width:768px) {
     .item.hentry {
     height: 40em;
