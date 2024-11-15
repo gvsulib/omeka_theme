@@ -540,10 +540,10 @@ content: ' ';
 font-size: 1em;
 margin-right: .6em;
 }
-
 #dc_nav_bar ul.navigation li a {
-    color: #fff;
+    color: #333;
 }
+
 form#search-form label {
 position:absolute;
 left:-10000px;
@@ -590,6 +590,12 @@ form#search-form {
     display: none;
   }
 
+}
+
+@media screen and (min-width: 800px) {
+    #dc_nav_bar ul.navigation li a {
+    color: #fff;
+}
 }
 
 @media screen and (min-width: 600px) {
