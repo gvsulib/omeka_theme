@@ -15,7 +15,7 @@ $collectionTitle = strip_formatting(metadata('collection', array('Dublin Core', 
 
  <div class="wrapper">
     <div class="content">
-<div class="row-gutter" style="margin-top: 1em;">
+<div class="row-gutter">
 	<?php if (metadata('collection', 'total_items') > 0): ?>
         <?php foreach (loop('items') as $item): ?>
         <?php $itemTitle = strip_formatting(metadata('item', array('Dublin Core', 'Title'))); ?>
