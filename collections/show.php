@@ -11,7 +11,7 @@ $collectionTitle = strip_formatting(metadata('collection', array('Dublin Core', 
 	<?php if (metadata('collection', 'total_items') > 0): ?>
         <?php foreach (loop('items') as $item): ?>
         <?php $itemTitle = strip_formatting(metadata('item', array('Dublin Core', 'Title'))); ?>
-        <div class="item hentry col-4 col-sm-12">
+        <div class="item hentry col-3 col-md-4 col-sm-6">
 
             <?php if (metadata('item', 'has thumbnail')): ?>
             <div class="item-img">

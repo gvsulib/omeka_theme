@@ -7,15 +7,12 @@ echo head(array('title'=>$pageTitle,'bodyclass' => 'items browse'));
 ?>
 
 
-<h2><?php echo $pageTitle;?> <?php echo __('(%s total)', $total_results); ?></h2>
+<h2>Browse All <?php echo $pageTitle;?> <?php echo __('%s', $total_results); ?> Items</h2>
+
+<div id="filter_bar" class="wrapper-full-width wrapper-background wrapper-light">
 
 <!-- Code that displays the query string and filters applied -->
 <?php echo item_search_filters(); ?>
-
-<!--pagination box that appears in the top and bottom corners-->
-
-<?php echo pagination_links(); ?>
-
 
 <!--If the search produced results, show them, along with options to sort them.  Browsing is basically identical to executing a very specific search-->
 <?php if ($total_results > 0): ?>
@@ -27,10 +24,20 @@ $sortLinks[__('Title')] = 'Dublin Core,Title';
 $sortLinks[__('Creator')] = 'Dublin Core,Creator';
 //$sortLinks[__('Date Added')] = 'added';
 ?>
-<div id="sort-links">
-    <span class="sort-label"><?php echo __('Sort by: '); ?></span><?php echo browse_sort_links($sortLinks); ?>
+<div style="background-color: #F7F7F7;">
+    <div class="content" style="padding: 0 3em 0 3em;">
+        <div class="row">    
+            <div class="col-3" id="sort-links">
+                <span class="sort-label"><?php echo __('Sort by: '); ?></span><?php echo browse_sort_links($sortLinks); ?>
+             </div>
+             <div class="col-6"></div>
+            <div class="col-3">
+             <?php echo pagination_links(); ?>
+            </div>
+        </div>
+    </div>
 </div>
-
+</div>
 
 
 
@@ -41,7 +48,7 @@ $sortLinks[__('Creator')] = 'Dublin Core,Creator';
 
 <!--Code to display the actual items-->
 <?php foreach (loop('items') as $item): ?>
-<div class="item record col-4 col-md-6 col-sm-12">
+<div class="item record col-3 col-md-4 col-sm-6">
     
     <div class="item-meta">
     <?php if (metadata('item', 'has files')): ?>
@@ -78,9 +85,20 @@ $sortLinks[__('Creator')] = 'Dublin Core,Creator';
 </div><!-- end class="item hentry" -->
 <?php endforeach; ?>
 </div>
-<div class="cms-clear clear"></div>
-
+</div>
+</div>
+<div class="wrapper">
+    <div class="content">
+<div class="row-gutter">
+    <div class="col-9 col-md-6">
+    </div>
+<div class="col-3 col-md-6" style="text-align: right;">
 <?php echo pagination_links(); ?>
+</div>
+</div>
+</div>
+</div>
+
 <!--code that produces the links to the atom and other sorts of feeds at the bottom of the page-->
 <div id="outputs">
     <span class="outputs-label"><?php echo __('Output Formats'); ?></span>
