@@ -41,13 +41,16 @@ $collectionTitle = strip_formatting(metadata('collection', array('Dublin Core', 
 </div></div>
 </div><!-- end collection-items -->
 <div class="clear"></div>
-
-    <div class="row"><div class="col-12"><hr />
-<span class="btn btn-default"><?php echo link_to_items_browse(__('Browse All Items in %s', $collectionTitle), array('collection' => metadata('collection', 'id'))); ?></span>
+<div class="wrapper">
+    <div class="content">
+    <div class="row">
+        <div class="col-12"><hr />
+<span class="btn btn-primary"><?php echo link_to_items_browse(__('Browse All Items in %s', $collectionTitle), array('collection' => metadata('collection', 'id'))); ?></span>
 
 <?php echo all_element_texts('collection'); ?>
 </div>
-
+</div>
+</div>
 
 <?php fire_plugin_hook('public_collections_show', array('view' => $this, 'collection' => $collection)); ?>
 
