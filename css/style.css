@@ -746,7 +746,9 @@ background-color: #ccc;
 */
 
 @media screen and (min-width: 986px) {
-    .item.record:nth-child(4n+1), .collection.record:nth-child(4n+1) {
+    .item.record:nth-child(4n+1), 
+    .item.hentry:nth-child(4n+1),
+    .collection.record:nth-child(4n+1) {
         clear:left;
     }
     #header_bar {
@@ -755,7 +757,9 @@ background-color: #ccc;
 }
 
 @media screen and (min-width: 800px) and (max-width:985px) {
-    .item.record:nth-child(3n+1), .collection.record:nth-child(3n+1) {
+    .item.record:nth-child(3n+1), 
+    .item.hentry:nth-child(3n+1),
+    .collection.record:nth-child(3n+1) {
         clear: left;
     }
     #header_wrapper {     
@@ -767,7 +771,8 @@ background-color: #ccc;
 @media screen and (min-width: 1px) and (max-width:800px) {
 
     .item.record:nth-child(2n+1), 
-    .collection.record:nth-child(2n+1) {
+    .collection.record:nth-child(2n+1),
+     .item.hentry:nth-child(2n+1) {
         clear: left;
     }
     #filter_bar {
