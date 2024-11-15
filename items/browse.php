@@ -83,7 +83,7 @@ $sortLinks[__('Creator')] = 'Dublin Core,Creator';
     </div>
     <?php endif; ?>
 
-    <?php fire_plugin_hook('public_items_browse_each', array('view' => $this, 'item' =>$item)); ?>
+    <!--?php fire_plugin_hook('public_items_browse_each', array('view' => $this, 'item' =>$item)); ?-->
 
     </div><!-- end class="item-meta" -->
 </div><!-- end class="item hentry" -->
@@ -109,7 +109,7 @@ $sortLinks[__('Creator')] = 'Dublin Core,Creator';
     <div class="content">
 <div class="row-gutter">
 <div id="outputs" class="col-12">
-    <span class="outputs-label"><?php echo __('Output Formats'); ?></span>
+    <h1 class="h4" class="outputs-label"><?php echo __('Output Formats'); ?></h1>
     <?php echo output_format_list(false); ?>
 </div>
 </div>

@@ -1,7 +1,7 @@
 <div class="hide-print wrapper">
 				<br>
 				<hr>
-			<div class="content" style="padding: 0 3em 0 3em;">
+			<div class="content">
 			<div class="row">
 				<div class="col-6 col-sm-12">
 					
