@@ -11,18 +11,17 @@ echo head(array('title'=>$pageTitle,'bodyclass' => 'items browse'));
         <div class="row-gutter">
             <div class="col-12">
 <h1 class="h2">Browse All <?php echo __('%s', $total_results); ?> Items</h1>
+<!-- Code that displays the query string and filters applied -->
+<?php echo item_search_filters(); ?>
 </div>
 </div>
 </div>
 </div>
+
+
 
 <div id="filter_bar" class="wrapper-full-width wrapper-background wrapper-light">
 
-<!-- Code that displays the query string and filters applied -->
-<?php echo item_search_filters(); ?>
-
-<!--If the search produced results, show them, along with options to sort them.  Browsing is basically identical to executing a very specific search-->
-<?php if ($total_results > 0): ?>
 
 
 <!--code that produces the sorting options on the upper left.  You can sort on any metadata you like by adding $sortLinks options-->
