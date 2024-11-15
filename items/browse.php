@@ -7,7 +7,7 @@ echo head(array('title'=>$pageTitle,'bodyclass' => 'items browse'));
 ?>
 
 <div class="wrapper">
-    <div class="content">
+    <div class="content" style="padding-top: 1em;">
         <div class="row-gutter">
             <div class="col-12">
 <h1 class="h2">Browse All <?php echo __('%s', $total_results); ?> Items</h1>
