@@ -3,11 +3,12 @@ $pageTitle = __('Browse Collections');
 echo head(array('title'=>$pageTitle,'bodyclass' => 'collections browse'));
 ?>
 <div class="wrapper">
-     <div class="content" style="padding: 0 3em 0 3em;">
+     <div class="content">
 <div class="row">
-   
-        <h2>Browse All <?php echo __('%s', $total_results); ?> Collections</h2>
+   <div class="col-12">
+        <h1 class="h2">Browse All <?php echo __('%s', $total_results); ?> Collections</h1>
     </div>
+</div>
 </div>
 </div>
 

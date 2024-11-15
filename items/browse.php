@@ -6,8 +6,15 @@ $pageTitle = __('Browse Items');
 echo head(array('title'=>$pageTitle,'bodyclass' => 'items browse'));
 ?>
 
-
-<h2>Browse All <?php echo $pageTitle;?> <?php echo __('%s', $total_results); ?> Items</h2>
+<div class="wrapper">
+    <div class="content">
+        <div class="row-gutter">
+            <div class="col-12">
+<h1 class="h2">Browse All <?php echo __('%s', $total_results); ?> Items</h1>
+</div>
+</div>
+</div>
+</div>
 
 <div id="filter_bar" class="wrapper-full-width wrapper-background wrapper-light">
 
@@ -27,11 +34,11 @@ $sortLinks[__('Creator')] = 'Dublin Core,Creator';
 <div style="background-color: #F7F7F7;">
     <div class="content" style="padding: 0 3em 0 3em;">
         <div class="row">    
-            <div class="col-3" id="sort-links">
+            <div class="col-3 col-md-4" id="sort-links">
                 <span class="sort-label"><?php echo __('Sort by: '); ?></span><?php echo browse_sort_links($sortLinks); ?>
              </div>
-             <div class="col-6"></div>
-            <div class="col-3">
+             <div class="col-6 col-md-2"></div>
+            <div class="col-3 col-md-6">
              <?php echo pagination_links(); ?>
             </div>
         </div>

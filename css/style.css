@@ -565,6 +565,11 @@ overflow:hidden;
 
 .btn-primary a {
     color: #fff;
+    text-decoration: none;
+}
+.btn-primary a:hover
+{
+    color: ##0039c5;
 }
 
 @media screen and (min-width:768px) {
