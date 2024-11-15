@@ -557,7 +557,6 @@ overflow:hidden;
 
 #search-form input[type="text"] {
     padding: 3px;
-    width: 89%;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -613,6 +612,9 @@ form#search-form {
     padding-left: 1.4em;
   }
 
+#search-form input[type="text"] {
+    width: 89%;
+}
 }
 
 @media screen and (min-width: 801px) {
