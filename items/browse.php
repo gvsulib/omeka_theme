@@ -46,8 +46,9 @@ $sortLinks[__('Creator')] = 'Dublin Core,Creator';
 </div>
 
  <div class="cms-clear clear"></div>
-
- <div class="row row-gutter">
+<div class="wrapper">
+    <div class="content">
+ <div class="row-gutter">
 
 <!--Code to display the actual items-->
 <?php foreach (loop('items') as $item): ?>
@@ -90,6 +91,7 @@ $sortLinks[__('Creator')] = 'Dublin Core,Creator';
 </div>
 </div>
 </div>
+</div>
 <div class="wrapper">
     <div class="content">
 <div class="row-gutter">
@@ -103,10 +105,17 @@ $sortLinks[__('Creator')] = 'Dublin Core,Creator';
 </div>
 
 <!--code that produces the links to the atom and other sorts of feeds at the bottom of the page-->
-<div id="outputs">
+<div class="wrapper">
+    <div class="content">
+<div class="row-gutter">
+<div id="outputs" class="col-12">
     <span class="outputs-label"><?php echo __('Output Formats'); ?></span>
     <?php echo output_format_list(false); ?>
 </div>
+</div>
+</div>
+</div>
+
 
 <?php fire_plugin_hook('public_items_browse', array('items'=>$items, 'view' => $this)); ?>
 
