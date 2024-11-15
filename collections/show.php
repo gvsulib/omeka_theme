@@ -7,7 +7,7 @@ $collectionTitle = strip_formatting(metadata('collection', array('Dublin Core', 
     <div class="content">
         <div class="row">
             <div class="col-12">
-                <h1><?php echo $collectionTitle; ?></h1>
+                <h1 class="h3"><?php echo $collectionTitle; ?></h1>
             </div>
         </div>
     </div>
