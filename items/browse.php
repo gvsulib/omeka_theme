@@ -18,9 +18,9 @@ echo head(array('title'=>$pageTitle,'bodyclass' => 'items browse'));
 </div>
 </div>
 
-
-
 <div id="filter_bar" class="wrapper-full-width wrapper-background wrapper-light">
+
+
 
 
 
@@ -45,9 +45,6 @@ $sortLinks[__('Creator')] = 'Dublin Core,Creator';
 </div>
 </div>
 
-
-
-<?php endif; ?>
  <div class="cms-clear clear"></div>
 
  <div class="row row-gutter">
