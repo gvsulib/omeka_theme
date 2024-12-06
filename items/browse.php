@@ -96,21 +96,11 @@ $sortLinks[__('Creator')] = 'Dublin Core,Creator';
     <div class="content">
 <div class="row-gutter">
     <div class="col-9 col-md-6">
+        <h1 class="h4" class="outputs-label"><?php echo __('Output Formats'); ?></h1>
+    <?php echo output_format_list(false); ?>
     </div>
 <div class="col-3 col-md-6" style="text-align: right;">
 <?php echo pagination_links(); ?>
-</div>
-</div>
-</div>
-</div>
-
-<!--code that produces the links to the atom and other sorts of feeds at the bottom of the page-->
-<div class="wrapper">
-    <div class="content">
-<div class="row-gutter">
-<div id="outputs" class="col-12">
-    <h1 class="h4" class="outputs-label"><?php echo __('Output Formats'); ?></h1>
-    <?php echo output_format_list(false); ?>
 </div>
 </div>
 </div>
