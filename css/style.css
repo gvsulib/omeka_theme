@@ -2,7 +2,7 @@
 
 #search-form input[type="text"] {
     padding: 3px;
-    width: 75%;
+    width: 85%;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -13,6 +13,7 @@
     -webkit-appearance: none;
     border-radius: 0;
     height: 40px;
+    float: left;
 }
 
 ul.pagination li, 
@@ -34,7 +35,7 @@ ul.pagination li {
 
 #search-form button {
     height: 40px;
-    float: right;
+    float: left;
 }
 
 #advanced-form {
@@ -577,9 +578,10 @@ form#search-form {
   }
   #dc_nav_bar {
     height: 4em;
-    width: 111.5%;
+    width: 115%;
     margin-left: -2.5em;
     padding-left: 1.4em;
+    overflow:hidden;
   }
 
 
@@ -595,10 +597,7 @@ form#search-form {
 @media screen and (max-width: 1000px) {
    
 #search_bar {
-background-color: #ccc;
     padding-bottom: .5em;
-    width: 108%;
-    margin-left: -4%;
 }
 }
 
@@ -681,9 +680,8 @@ background-color: #ccc;
 
     #search_bar {
 
-    margin-left: -5%;
-    padding: 0 1% 1% 1%;
-    width: 110%;
+    padding: 1%;
+
 
     }
 
