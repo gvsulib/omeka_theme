@@ -58,7 +58,6 @@
 
                     
                     <div id="more-options" style="margin-top: 2em;">
-                        <div class="btn btn-primary" style="float:left;"><a href="#">Show More Details</a></div>
                         <div class="btn btn-default" style="float:right;"><?php fire_plugin_hook('public_items_show', array('view' => $this, 'item' => $item)); ?></div>
                     </div>
 
@@ -79,5 +78,26 @@
         </div>
 
 </div> <!-- End of Primary. -->
+
+<style>
+.gvsu_media h4,
+ { display: none; }
+
+
+</style>
+<script>
+jQuery('#more-options').prepend('<div class="btn btn-primary" style="float:left;"><a href="#" id="showmore">Show More Details</a></div>');
+jQuery('#dublin-core-format').addClass('moreinfo');
+jQuery('#dublin-core-identifier').addClass('moreinfo');
+jQuery('#dublin-core-type').addClass('moreinfo');
+jQuery('#dublin-core-language').addClass('moreinfo');
+
+jQuery('.moreinfo').hide();
+
+jQuery('#showmore').on('click', function() {
+    jQuery('.moreinfo').toggle();
+});
+
+</script>
 
  <?php echo foot(); ?>
