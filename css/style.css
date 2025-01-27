@@ -111,11 +111,11 @@ button.remove_search {
     border-top: 1px solid #eee;
     padding-top: 18px;
 }
-.navigation {
+#dc_nav_bar .navigation {
     list-style: none;
     padding-left: 0;
 }
-.navigation a {
+#dc_nav_bar .navigation a {
   text-decoration: none;
 }
 #next-item {
@@ -162,9 +162,9 @@ button.remove_search {
     display: inline-block;
     margin: 0 .75em;
 }
-#mobile-nav {
+/*#mobile-nav {
     display: none;
-  }
+  }*/
 
 /*.collection.record img,
 .item.record img {
@@ -255,7 +255,7 @@ address {
     padding-left: 2%;
 }
 
-.navigation li {
+#dc_nav_bar .navigation li {
     float: left;
 }
 
