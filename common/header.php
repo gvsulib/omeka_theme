@@ -87,7 +87,7 @@
         
           <div class="hide-lg hide-md col-sm-3">
             <a id="gv-hamburger" role="button" tabindex="0" aria-label="Menu" aria-controls="cms-navigation-mobile">
-              <span class="icon icon-bars" aria-hidden="true"></span>
+             <img src="https://libapps.s3.amazonaws.com/accounts/21/images/menu.png" alt="" style="width:auto;min-width:auto;" aria-hidden="true">
             </a>
           </div>
         
