@@ -80,14 +80,16 @@
 </div> <!-- End of Primary. -->
 
 <style>
-.gvsu_media h4,
- { display: none; }
+.gvsu_media h4 { display: none; }
 #showmore { cursor: pointer; }
 a.correction { text-deocration: none; }
-
+.item-file.application-pdf {     margin-top: 2em;
+    border: 1px solid #000;
+    background-color: #f5f5f5;
+    text-align: center; }
 </style>
 <script>
-jQuery('#more-options').prepend('<div class="btn btn-primary" style="float:left;"><span id="showmore">Show More Details</span></div>');
+jQuery('#more-options').prepend('<div class="btn btn-primary" style="float:left;"><span id="showmore">More Details</span></div>');
 jQuery('#dublin-core-format').addClass('moreinfo');
 jQuery('#dublin-core-identifier').addClass('moreinfo');
 jQuery('#dublin-core-type').addClass('moreinfo');
