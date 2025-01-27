@@ -58,7 +58,7 @@
                     <?php endif;?>
 
                     
-                    <div id="more-options">
+                    <div id="more-options" style="margin-top: 2em;">
                         <div class="btn btn-primary" style="float:left;"><a href="#">Show More Details</a></div>
                         <div class="btn btn-default" style="float:right;"><?php fire_plugin_hook('public_items_show', array('view' => $this, 'item' => $item)); ?></div>
                     </div>
