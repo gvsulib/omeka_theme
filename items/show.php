@@ -68,7 +68,7 @@
             </div>
         </div>
         <div class="wrapper-full-width wrapper-background wrapper-light">
-            <div class="background-color: #f7f7f7;">
+            <div style="background-color: #f7f7f7;" class="row content">
 
                 <ul class="item-pagination navigation">
                     <li id="previous-item" class="previous"><?php echo link_to_previous_item_show(); ?></li>
