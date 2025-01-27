@@ -101,7 +101,7 @@ jQuery('#showmore').on('click', function() {
     jQuery('.moreinfo').toggle();
 });
 
-jQuery('.correction').text('Suggest a Correction');
+jQuery('.correction')find('a').text('Suggest a Correction');
 </script>
 
  <?php echo foot(); ?>
