@@ -97,7 +97,7 @@
     </div>
   <div id="cms-navigation-mobile" class="navigation navigation-mobile hide-print"><div class="content">
         <div role="navigation" aria-label="Mobile Navigation">
-  <ul>
+  <ul role="menubar">
     
           <li class="navigation-sub">
             <a href="https://www.gvsu.edu/library/specialcollections/cms-siteindex-index.htm#0F864938-0BC5-7D2D-5FF164D4329FAC1B" target="_self" aria-label="Collections sub navigation" aria-expanded="false" aria-haspopup="true" aria-controls="cms-navigation-mobile-sub-1" id="cms-navigation-mobile-label-1">
