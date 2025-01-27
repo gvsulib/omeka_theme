@@ -9,8 +9,7 @@
                         <h1 class="h2"><?php echo metadata('item', array('Dublin Core','Title')); ?></h1>
                     </div>
                 </div>
-            </div>
-        </div>
+            
 	<?php
 	$format = metadata('item', array('Dublin Core','Format'));
 	$collection = metadata('item', 'Collection Name');
@@ -28,8 +27,7 @@
 		echo "<h3><a href='https://gvsu.co1.qualtrics.com/jfe/form/SV_eQbNl5334xJd8PA'>Please complete this brief survey to help GVSU Libraries improve our digital collections!</a></h3>";
 	}
         ?>
-        <div class="wrapper">
-            <div class="content">
+     
                 <div class="row-gutter">
                     <div class="col-6 col-sm-12">
                         <div id="item-images">
