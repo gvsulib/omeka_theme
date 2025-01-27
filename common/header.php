@@ -85,7 +85,7 @@
           </h1>
         </div>
         
-          <div class="hide-lg hide-md col-sm-3">
+          <div class="col-sm-3">
             <a id="gv-hamburger" role="button" tabindex="0" aria-label="Menu" aria-controls="cms-navigation-mobile">
              <img src="https://libapps.s3.amazonaws.com/accounts/21/images/menu.png" alt="" style="width:auto;min-width:auto;" aria-hidden="true">
             </a>
@@ -108,7 +108,7 @@
   </div>
   </div>
 
-  <div id="cms-navigation" class="navigation hide-sm hide-print">
+  <div id="cms-navigation" class="navigation hide-sm hide-print" style="display:none !important;">
       <div class="content">
         <div role="navigation" aria-label="Main Navigation">
   <ul>
