@@ -58,7 +58,7 @@
 
                     
                     <div id="more-options" style="margin-top: 2em;">
-                        <div class="btn btn-default" style="float:right;"><?php fire_plugin_hook('public_items_show', array('view' => $this, 'item' => $item)); ?></div>
+                        <div class="btn btn-default correction" style="float:right;"><?php fire_plugin_hook('public_items_show', array('view' => $this, 'item' => $item)); ?></div>
                     </div>
 
                     </div>
@@ -68,7 +68,7 @@
         <div class="wrapper-full-width wrapper-background wrapper-light">
             <div style="background-color: #f7f7f7;" class="row content">
 
-                <ul class="item-pagination">
+                <ul class="item-pagination" style="list-style: none;">
                     <li id="previous-item" class="previous"><?php echo link_to_previous_item_show(); ?></li>
                      <li id="next-item" class="next"><?php echo link_to_next_item_show(); ?></li>
                     <li id="current-collection" style="text-align: center;"> All items in <?php echo link_to_collection_for_item(); ?></li>
@@ -82,11 +82,12 @@
 <style>
 .gvsu_media h4,
  { display: none; }
-
+#showmore { cursor: pointer; }
+a.correction { text-deocration: none; }
 
 </style>
 <script>
-jQuery('#more-options').prepend('<div class="btn btn-primary" style="float:left;"><a href="#" id="showmore">Show More Details</a></div>');
+jQuery('#more-options').prepend('<div class="btn btn-primary" style="float:left;"><span id="showmore">Show More Details</span></div>');
 jQuery('#dublin-core-format').addClass('moreinfo');
 jQuery('#dublin-core-identifier').addClass('moreinfo');
 jQuery('#dublin-core-type').addClass('moreinfo');
@@ -98,6 +99,7 @@ jQuery('#showmore').on('click', function() {
     jQuery('.moreinfo').toggle();
 });
 
+jQuery('.correction').text('Suggest a Correction');
 </script>
 
  <?php echo foot(); ?>
