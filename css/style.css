@@ -407,6 +407,7 @@ ul.pagination li {
     text-decoration: none;
 }
 
+
 #item-images div[class*=" image-"] a.download-file::after {
     content: "Click to Enlarge";
 }
@@ -477,8 +478,8 @@ nav ul.navigation {
     margin-top: 1.5em !important;
     font-size: .8em !important;
 }
-/*
-.item-img {
+
+.collections .item-img {
     height: 250px;
     text-align: center;
     background: #CECDCD;
@@ -486,16 +487,16 @@ nav ul.navigation {
     white-space: no-wrap;
     font: 0/0 a;
 }
-*/
+
 a.read-more {
     display: block;
     margin-bottom: 2em;
 }
-/*
-.item-img {
+
+.collections .item-img {
     max-height: 370px;
 }
-*/
+
 .item-img a {
     text-align:center; /* Align center inline elements */
     font: 0/0 a; 
