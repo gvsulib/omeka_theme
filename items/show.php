@@ -32,7 +32,7 @@
                     <div class="col-6 col-sm-12">
                         <div id="item-images">
 	
-                             <?php echo files_for_item(array('imageSize' => 'fullsize', 'linkAttributes' => array('target'=>'_blank'), 'imgAttributes' => array('alt' => 'Link to full-size')); ?>
+                             <?php echo files_for_item(array('imageSize' => 'fullsize', 'linkAttributes' => array('target'=>'_blank'), 'imgAttributes' => array('alt' => 'Link to full-size'))); ?>
 
                              <!-- The following prints a citation for this item. -->
                         </div>
