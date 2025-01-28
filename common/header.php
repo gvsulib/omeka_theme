@@ -70,8 +70,8 @@
   
   <div class="header">
     <div class="row content">
-      <div class="col-5 col-sm-12 logo">
-        <div class="col-12 col-sm-9">
+      <div class="col-12 logo">
+        <div class="col-9 col-sm-9">
           <h1>
             <a href="/">
               <!--[if lte IE 8|!IE]>
@@ -85,7 +85,7 @@
           </h1>
         </div>
         
-          <div class="col-sm-3">
+          <div class="col-3 col-sm-3" style="text-align:right;">
             <a id="gv-hamburger" role="button" tabindex="0" aria-label="Menu" aria-controls="cms-navigation-mobile">
              <img src="https://libapps.s3.amazonaws.com/accounts/21/images/menu.png" alt="" style="width:auto;min-width:auto;" aria-hidden="true">
             </a>

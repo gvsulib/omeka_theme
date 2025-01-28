@@ -16,6 +16,10 @@
     float: left;
 }
 
+.header .content .logo img, .header .content .logo svg {
+    max-width: 30em;
+}
+
 ul.pagination li, 
 .pagination li {
     border: none !important;
