@@ -494,7 +494,7 @@ a.read-more {
 }
 
 .collections .item-img,
-.items.browse .item-img {
+.browse .item-img {
     max-height: 370px;
 }
 
