@@ -493,7 +493,8 @@ a.read-more {
     margin-bottom: 2em;
 }
 
-.collections .item-img {
+.collections .item-img,
+.items.browse .item-img {
     max-height: 370px;
 }
 
