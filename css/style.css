@@ -37,6 +37,10 @@ ul.pagination li {
         text-decoration: none;
     }
 
+    body.hamburger-open .header .quick, body.hamburger-open .header .navigation-mobile {
+        display: block !important;
+    }
+
 #filter_bar {
     font-size: 95%;
     background-color: #fafafa;
