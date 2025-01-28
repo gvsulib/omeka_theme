@@ -40,6 +40,11 @@ ul.pagination li {
     body.hamburger-open .header .quick, body.hamburger-open .header .navigation-mobile {
         display: block !important;
     }
+        .header .navigation.navigation-mobile .content ul>li a {
+        padding: 1.7586206897em 1em;
+        margin: 0;
+        display: block;
+    }
 
 #filter_bar {
     font-size: 95%;
