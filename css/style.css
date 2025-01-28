@@ -29,6 +29,13 @@ ul.pagination li {
     margin: 0;
     padding: 0;
 }
+.header .content .logo div:last-child a {
+        cursor: pointer;
+        color: #FFF;
+        font-size: 225%;
+        margin-right: .25em;
+        text-decoration: none;
+    }
 
 #filter_bar {
     font-size: 95%;
