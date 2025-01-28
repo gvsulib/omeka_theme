@@ -32,7 +32,7 @@
                     <div class="col-6 col-sm-12">
                         <div id="item-images">
 	
-                             <?php echo files_for_item(array('linkAttributes' => array('target'=>'_blank'), 'imgAttributes' => array('alt' => 'Link to full-size'))); ?>
+                             <?php echo files_for_item(array('linkAttributes' => array('target'=>'_blank'), 'imgAttributes' => array('alt' => 'Link to full-size', 'imageSize' => 'fullsize'))); ?>
 
                              <!-- The following prints a citation for this item. -->
                         </div>
@@ -101,7 +101,7 @@ jQuery('#showmore').on('click', function() {
     jQuery('.moreinfo').toggle();
 });
 
-//jQuery('.correction').find('a').text('Suggest a Correction');
+jQuery('.correction').find('a').text('Suggest a Correction');
 </script>
 
  <?php echo foot(); ?>
