@@ -31,9 +31,10 @@ ul.pagination li {
 }
 
 ul.pagination li a {
-    padding: .2em .4em;
+    padding: 0 .5em;
    margin: 0;
     border: 1px solid #777;
+    border-radius: 2px;
 }
 
 .corrections h2 {
