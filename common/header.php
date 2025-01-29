@@ -271,6 +271,7 @@
       </div>
     </div>
   </div>
+</div>
 <!--Begin page body-->
 <div id="main" role="main">
     <div id="cms-content"><!--
