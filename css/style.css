@@ -731,7 +731,7 @@ display: none;
     .h2.serif { font-size: 1.5em; }
     #header_wrapper {     
         background-color: #002855;
-    height: 3.85em;
+    /*height: 3.85em;*/
  }
 
  #solr-facets {
