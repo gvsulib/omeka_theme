@@ -737,12 +737,12 @@ display: none;
  #solr-facets {
     position: fixed;
     bottom: 0;
+    left: 0;
     height: 40%;
-    width: 105%;
+    width: 100%;
     z-index: 99;
     background-color: #fff;
     border-top: 1px solid #333;
-    margin-left: -4%;
     padding-left: 2%;
     overflow: scroll;
     display: none;
