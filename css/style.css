@@ -745,6 +745,7 @@ display: none;
     margin-left: -4%;
     padding-left: 2%;
     overflow: scroll;
+    display: none;
 }
 
 #search-facet-overlay {
