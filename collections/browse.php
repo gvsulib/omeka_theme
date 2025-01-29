@@ -20,11 +20,11 @@ $sortLinks[__('Most Recent')] = 'added';
    <div style="background-color: #F7F7F7;">
     <div class="content" style="padding: 0 3em 0 3em;">
         <div class="row">    
-            <div class="col-3 col-md-4" id="sort-links">
+            <div class="col-4" id="sort-links">
                 <span class="sort-label"><?php echo __('Sort by: '); ?></span><?php echo browse_sort_links($sortLinks); ?>
              </div>
-             <div class="col-6 col-md-4"></div>
-            <div class="col-3 col-md-4">
+             <div class="col-4 col-md-2"></div>
+            <div class="col-4 col-md-6">
              <?php echo pagination_links(); ?>
             </div>
         </div>
