@@ -25,7 +25,11 @@ ul.pagination {
 }
 
 .pagination {
-    margin: 0;
+    margin: 0 !important;
+}
+
+.sort-icon {
+    display: none;
 }
 
 ul.pagination li, 
