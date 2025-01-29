@@ -622,6 +622,9 @@ form#search-form {
     #dc_nav_bar ul.navigation li a {
     color: #fff;
 }
+#facet-toggle {
+display: none;
+}
 
 }
 
@@ -730,6 +733,36 @@ form#search-form {
         background-color: #002855;
     height: 3.85em;
  }
+
+ #solr-facets {
+    position: fixed;
+    bottom: 0;
+    height: 40%;
+    width: 105%;
+    z-index: 99;
+    background-color: #fff;
+    border-top: 1px solid #333;
+    margin-left: -4%;
+    padding-left: 2%;
+    overflow: scroll;
+}
+
+#search-facet-overlay {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2; 
+}
+
+#facet-toggle {
+    display: block;
+}
 
 }
 
