@@ -29,6 +29,14 @@ ul.pagination li {
     margin: 0;
     padding: 0;
 }
+
+.corrections h2 {
+    display: none;
+}
+.corrections a {
+    text-decoration: none;
+    color: #111;
+}
 .header .content .logo div:last-child a {
         cursor: pointer;
         color: #FFF;
