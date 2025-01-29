@@ -114,32 +114,32 @@
   <ul>
     
           <li class="navigation-sub">
-            <a href="./cms-siteindex-index.htm#0F864938-0BC5-7D2D-5FF164D4329FAC1B" target="_self" aria-label="Collections sub navigation" aria-expanded="false" aria-haspopup="true" aria-controls="cms-navigation-sub-1" id="cms-navigation-label-1">
+            <a href="https://www.gvsu.edu/library/specialcollections/cms-siteindex-index.htm#0F864938-0BC5-7D2D-5FF164D4329FAC1B" target="_self" aria-label="Collections sub navigation" aria-expanded="false" aria-haspopup="true" aria-controls="cms-navigation-sub-1" id="cms-navigation-label-1">
               Collections
               <span class="icon icon-caret-down" aria-hidden="true"></span>
             </a>
             <ul id="cms-navigation-sub-1">
               
                   <li>
-                    <a href="search-our-collections-103.htm" target="_self" id="cms-navigation-label-1-1" aria-labelledby="cms-navigation-label-1 cms-navigation-label-1-1">
+                    <a href="https://www.gvsu.edu/library/specialcollections/search-our-collections-103.htm" target="_self" id="cms-navigation-label-1-1" aria-labelledby="cms-navigation-label-1 cms-navigation-label-1-1">
                       Search the Collections
                     </a>
                   </li>
                 
                   <li>
-                    <a href="rare-books-44.htm" target="_self" id="cms-navigation-label-1-2" aria-labelledby="cms-navigation-label-1 cms-navigation-label-1-2">
+                    <a href="https://www.gvsu.edu/library/specialcollections/rare-books-44.htm" target="_self" id="cms-navigation-label-1-2" aria-labelledby="cms-navigation-label-1 cms-navigation-label-1-2">
                       Rare Books
                     </a>
                   </li>
                 
                   <li>
-                    <a href="special-collections-3.htm" target="_self" id="cms-navigation-label-1-3" aria-labelledby="cms-navigation-label-1 cms-navigation-label-1-3">
+                    <a href="https://www.gvsu.edu/library/specialcollections/special-collections-3.htm" target="_self" id="cms-navigation-label-1-3" aria-labelledby="cms-navigation-label-1 cms-navigation-label-1-3">
                       Special Collections
                     </a>
                   </li>
                 
                   <li>
-                    <a href="university-archives-26.htm" target="_self" id="cms-navigation-label-1-4" aria-labelledby="cms-navigation-label-1 cms-navigation-label-1-4">
+                    <a href="https://www.gvsu.edu/library/specialcollections/university-archives-26.htm" target="_self" id="cms-navigation-label-1-4" aria-labelledby="cms-navigation-label-1 cms-navigation-label-1-4">
                       University Archives
                     </a>
                   </li>
@@ -154,38 +154,38 @@
           </li>
         
           <li class="navigation-sub">
-            <a href="./cms-siteindex-index.htm#290D8758-F18E-662F-23679AE14EEC2E5F" target="_self" aria-label="Research sub navigation" aria-expanded="false" aria-haspopup="true" aria-controls="cms-navigation-sub-2" id="cms-navigation-label-2">
+            <a href="https://www.gvsu.edu/library/specialcollections/cms-siteindex-index.htm#290D8758-F18E-662F-23679AE14EEC2E5F" target="_self" aria-label="Research sub navigation" aria-expanded="false" aria-haspopup="true" aria-controls="cms-navigation-sub-2" id="cms-navigation-label-2">
               Research
               <span class="icon icon-caret-down" aria-hidden="true"></span>
             </a>
             <ul id="cms-navigation-sub-2">
               
                   <li>
-                    <a href="research-support-105.htm" target="_self" id="cms-navigation-label-2-1" aria-labelledby="cms-navigation-label-2 cms-navigation-label-2-1">
+                    <a href="https://www.gvsu.edu/library/specialcollections/research-support-105.htm" target="_self" id="cms-navigation-label-2-1" aria-labelledby="cms-navigation-label-2 cms-navigation-label-2-1">
                       Research Guide
                     </a>
                   </li>
                 
                   <li>
-                    <a href="policies-102.htm" target="_self" id="cms-navigation-label-2-2" aria-labelledby="cms-navigation-label-2 cms-navigation-label-2-2">
+                    <a href="https://www.gvsu.edu/library/specialcollections/policies-102.htm" target="_self" id="cms-navigation-label-2-2" aria-labelledby="cms-navigation-label-2 cms-navigation-label-2-2">
                       Policies
                     </a>
                   </li>
                 
                   <li>
-                    <a href="visiting-48.htm" target="_self" id="cms-navigation-label-2-3" aria-labelledby="cms-navigation-label-2 cms-navigation-label-2-3">
+                    <a href="https://www.gvsu.edu/library/specialcollections/visiting-48.htm" target="_self" id="cms-navigation-label-2-3" aria-labelledby="cms-navigation-label-2 cms-navigation-label-2-3">
                       Plan a Visit
                     </a>
                   </li>
                 
                   <li>
-                    <a href="citations-and-copyright-46.htm" target="_self" id="cms-navigation-label-2-4" aria-labelledby="cms-navigation-label-2 cms-navigation-label-2-4">
+                    <a href="https://www.gvsu.edu/library/specialcollections/citations-and-copyright-46.htm" target="_self" id="cms-navigation-label-2-4" aria-labelledby="cms-navigation-label-2 cms-navigation-label-2-4">
                       Citations and Copyright
                     </a>
                   </li>
                 
                   <li>
-                    <a href="copies-and-scans-54.htm" target="_self" id="cms-navigation-label-2-5" aria-labelledby="cms-navigation-label-2 cms-navigation-label-2-5">
+                    <a href="https://www.gvsu.edu/library/specialcollections/copies-and-scans-54.htm" target="_self" id="cms-navigation-label-2-5" aria-labelledby="cms-navigation-label-2 cms-navigation-label-2-5">
                       Copies and Scans
                     </a>
                   </li>
@@ -194,38 +194,38 @@
           </li>
         
           <li>
-            <a href="instruction-47.htm" target="_self">
+            <a href="https://www.gvsu.edu/library/specialcollections/instruction-47.htm" target="_self">
               Instruction
             </a>
           </li>
         
           <li class="navigation-sub">
-            <a href="./cms-siteindex-index.htm#DD1AC402-9B2C-EB58-F2C7515112CFF925" target="_self" aria-label="Services sub navigation" aria-expanded="false" aria-haspopup="true" aria-controls="cms-navigation-sub-3" id="cms-navigation-label-3">
+            <a href="https://www.gvsu.edu/library/specialcollections/cms-siteindex-index.htm#DD1AC402-9B2C-EB58-F2C7515112CFF925" target="_self" aria-label="Services sub navigation" aria-expanded="false" aria-haspopup="true" aria-controls="cms-navigation-sub-3" id="cms-navigation-label-3">
               Services
               <span class="icon icon-caret-down" aria-hidden="true"></span>
             </a>
             <ul id="cms-navigation-sub-3">
               
                   <li>
-                    <a href="university-records-consultations-49.htm" target="_self" id="cms-navigation-label-3-1" aria-labelledby="cms-navigation-label-3 cms-navigation-label-3-1">
+                    <a href="https://www.gvsu.edu/library/specialcollections/university-records-consultations-49.htm" target="_self" id="cms-navigation-label-3-1" aria-labelledby="cms-navigation-label-3 cms-navigation-label-3-1">
                       University Records Consultations
                     </a>
                   </li>
                 
                   <li>
-                    <a href="digital-projects-63.htm" target="_self" id="cms-navigation-label-3-2" aria-labelledby="cms-navigation-label-3 cms-navigation-label-3-2">
+                    <a href="https://www.gvsu.edu/library/specialcollections/digital-projects-63.htm" target="_self" id="cms-navigation-label-3-2" aria-labelledby="cms-navigation-label-3 cms-navigation-label-3-2">
                       Digital Project Partnerships
                     </a>
                   </li>
                 
                   <li>
-                    <a href="student-jobs-94.htm" target="_self" id="cms-navigation-label-3-3" aria-labelledby="cms-navigation-label-3 cms-navigation-label-3-3">
+                    <a href="https://www.gvsu.edu/library/specialcollections/student-jobs-94.htm" target="_self" id="cms-navigation-label-3-3" aria-labelledby="cms-navigation-label-3 cms-navigation-label-3-3">
                       Student Jobs
                     </a>
                   </li>
                 
                   <li>
-                    <a href="donations-115.htm" target="_self" id="cms-navigation-label-3-4" aria-labelledby="cms-navigation-label-3 cms-navigation-label-3-4">
+                    <a href="https://www.gvsu.edu/library/specialcollections/donations-115.htm" target="_self" id="cms-navigation-label-3-4" aria-labelledby="cms-navigation-label-3 cms-navigation-label-3-4">
                       Donations
                     </a>
                   </li>
@@ -240,7 +240,7 @@
           </li>
         
           <li>
-            <a href="about-us-109.htm" target="_self">
+            <a href="https://www.gvsu.edu/library/specialcollections/about-us-109.htm" target="_self">
               About Us
             </a>
           </li>
