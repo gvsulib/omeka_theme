@@ -30,6 +30,11 @@ ul.pagination li {
     padding: 0;
 }
 
+ul.pagination li a {
+    padding: .2em .4em;
+   margin: 0;
+    border: 1px solid #777;
+
 .corrections h2 {
     display: none;
 }
