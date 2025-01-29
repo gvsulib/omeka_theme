@@ -479,7 +479,8 @@ nav ul.navigation {
     font-size: .8em !important;
 }
 
-.collections .item-img {
+.collections .item-img,
+.browse .item-img  {
     height: 250px;
     text-align: center;
     background: #CECDCD;
