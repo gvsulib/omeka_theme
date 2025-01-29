@@ -20,6 +20,14 @@
     max-width: 30em;
 }
 
+ul.pagination {
+    padding-top: 0;
+}
+
+.pagination {
+    margin: 0;
+}
+
 ul.pagination li, 
 .pagination li {
     border: none !important;
