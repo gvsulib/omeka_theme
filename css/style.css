@@ -32,6 +32,10 @@ ul.pagination {
     display: none;
 }
 
+.desc a::after {
+    content: "";
+}
+
 ul.pagination li, 
 .pagination li {
     border: none !important;
