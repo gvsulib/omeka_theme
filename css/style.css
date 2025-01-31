@@ -28,14 +28,6 @@ ul.pagination {
     margin: 0 !important;
 }
 
-.sort-icon {
-    display: none;
-}
-
-.desc a::after {
-    content: "";
-}
-
 ul.pagination li, 
 .pagination li {
     border: none !important;
