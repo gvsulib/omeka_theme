@@ -99,6 +99,7 @@ jQuery('.moreinfo').hide();
 
 jQuery('#showmore').on('click', function() {
     jQuery('.moreinfo').toggle();
+    jQuery('#more-options').hide();
 });
 
 jQuery('.correction').find('a').text('Suggest a Correction');

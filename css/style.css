@@ -602,7 +602,7 @@ form#search-form {
 
 @media screen and (min-width: 1001px) {
 #dc_nav_bar ul.navigation li {
-    margin-right: .6em;
+    margin-right: 1.5em;
     font-size: 1em;
 }
 #search-form input[type="text"] {
@@ -786,5 +786,13 @@ display: none;
     width: 76%;
 }
 
+}
+
+.asc a::after {
+    content: "▲";
+}
+
+.desc a::after {
+    content: "▼";
 }
 
