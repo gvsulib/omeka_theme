@@ -101,7 +101,7 @@
       <div class="col-12">
       <h1 class="h2 serif color-black padding-none margin-none">
         <a href="https://www.gvsu.edu/library/specialcollections" class="color-black">
-          Special Collections &amp; University Archives
+          Lemmen Library &amp; Archives
         </a>
       </h1>
     </div>

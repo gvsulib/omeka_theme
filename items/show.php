@@ -24,7 +24,7 @@
 		$is_younglords = True;
 	}
 	if ($is_younglords and $is_video) {
-		echo "<h3><a href='https://gvsu.co1.qualtrics.com/jfe/form/SV_eQbNl5334xJd8PA'>Please complete this brief survey to help GVSU Libraries improve our digital collections!</a></h3>";
+		echo "<div class="alert alert-info"><a href='https://gvsu.co1.qualtrics.com/jfe/form/SV_eQbNl5334xJd8PA'>Please complete this brief survey to help GVSU Libraries improve our digital collections!</a></div>";
 	}
         ?>
      
@@ -89,7 +89,7 @@ a.correction { text-deocration: none; }
     text-align: center; }
 </style>
 <script>
-jQuery('#more-options').prepend('<div class="btn btn-primary" style="float:left;"><span id="showmore">More Details</span></div>');
+jQuery('#more-options').prepend('<div class="btn btn-primary" id="showmore" style="float:left;"><span>More Details</span></div>');
 jQuery('#dublin-core-format').addClass('moreinfo');
 jQuery('#dublin-core-identifier').addClass('moreinfo');
 jQuery('#dublin-core-type').addClass('moreinfo');
@@ -99,7 +99,7 @@ jQuery('.moreinfo').hide();
 
 jQuery('#showmore').on('click', function() {
     jQuery('.moreinfo').toggle();
-    jQuery('#more-options').hide();
+    jQuery('#showmore').hide();
 });
 
 jQuery('.correction').find('a').text('Suggest a Correction');
