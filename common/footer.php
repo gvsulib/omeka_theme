@@ -134,7 +134,7 @@
 					<h2 class="sr-only">Legal</h2>
 					<ul>
 						<li>
-							<a href="https://www.gvsu.edu/affirmativeactionstatement.htm"><span class="hide-sm hide-md">GVSU is an </span>AA/EO Institution</a>
+							<a href="https://www.gvsu.edu/antidiscriminationstatement.htm"><span class="hide-sm hide-md">GVSU is an </span>A/EO Institution</a>
 						</li>
 						<li>
 							<a href="https://www.gvsu.edu/privacystatement.htm">Privacy Policy</a>
