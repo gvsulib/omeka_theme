@@ -16,9 +16,7 @@
 	if ($collection == "Young Lords in Lincoln Park Collection") {
 		$is_younglords = True;
 	}
-	if ($is_younglords and $is_video) {
-		echo "<h3><a href='https://gvsu.co1.qualtrics.com/jfe/form/SV_eQbNl5334xJd8PA'>Please complete this brief survey to help GVSU Libraries improve our digital collections!</a></h3>";
-	}
+	
         ?>
     <h3><?php echo __('Files'); ?></h3>
     <div id="item-images" class="row row-gutter">
